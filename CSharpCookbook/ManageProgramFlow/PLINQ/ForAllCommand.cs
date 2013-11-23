@@ -10,6 +10,7 @@ namespace CSharpCookbook.ManageProgramFlow.PLINQ
 
         /// <summary>
         /// Allows the Calculate method to begin even before the Process methods have finished
+        /// i.e. Process result sequence in parallel
         /// </summary>
         public void Execute()
         {            
