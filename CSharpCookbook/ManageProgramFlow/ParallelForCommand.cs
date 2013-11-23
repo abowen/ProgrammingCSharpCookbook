@@ -1,40 +1,26 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSharpCookbook.ManageProgramFlow
 {
-    public class ParallelForCommand : ICommand
+    public class ParallelForCommand : ICommand, IMsdn
     {
+        public string Description { get { return "Parallel.For"; } }
+
         public void Execute()
         {
-            Console.WriteLine(@"Parallel.For(0, 15, SquareValue);");
-            Parallel.For(0, 15, squareNumber => Console.WriteLine(squareNumber * squareNumber));
-            var numbers = new[] {1, 2, 3, 4, 5};
-            var options = new ParallelOptions();
-            var cancellationToken = new CancellationToken(true);
-            options.CancellationToken = cancellationToken;
-
-            Parallel.ForEach(numbers, options, Body);
-            
-            
-            
+            Console.WriteLine(@"Parallel.For with method");
+            Parallel.For(0, 10, ExternalMethod);
+            Console.WriteLine(@"Parallel.For with anonymous method");
+            Parallel.For(0, 10, squareNumber => Console.WriteLine(squareNumber*squareNumber));            
         }
 
-        private void Body(int i, ParallelLoopState state)
+        private void ExternalMethod(int i)
         {
-            for (int index = 1; index<=i; index++)
-            {
-                var output = String.Format("QUIT to stop - {0} of {1}", index, i);
-                Console.WriteLine(output);                
-                var readline = Console.ReadLine();
-                if (readline == "QUIT")
-                {                    
-                    output = String.Format("QUITTING - {0} of {1}", index, i);
-                    Console.WriteLine(output);
-                    state.Break();
-                }
-            }
-        }        
+            Console.WriteLine("Square Root: {0} is {1}", i, Math.Sqrt(i));
+        }
+
+        public string Title { get { return "Write a Simple Parallel.ForEach Loop"; } }
+        public string Website { get { return "http://msdn.microsoft.com/en-us/library/dd460720%28v=vs.110%29.aspx"; } }        
     }
 }

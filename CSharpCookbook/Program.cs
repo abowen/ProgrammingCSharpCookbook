@@ -7,19 +7,13 @@ namespace CSharpCookbook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1. Manage program flow");
-            var readLine = Console.ReadLine();
-            var value = int.Parse(readLine);
-            switch (value)
-            {
-                case 1 :
-                    Console.WriteLine("1. ParallelFor");
-                    readLine = Console.ReadLine();
-                    var command = new ParallelForCommand();
-                    command.Execute();
-                    break;
-            }
+            var commandTree = new CommandTree();
+            commandTree.AddCommand(new ParallelForBreakCommand());
+            commandTree.AddCommand(new ParallelForCancelCommand());
+            commandTree.AddCommand(new ParallelForCommand());
             
+            
+            commandTree.ExecuteCommands();
 
             Console.WriteLine("FINISH");
             Console.ReadLine();
