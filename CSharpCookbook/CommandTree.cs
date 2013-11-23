@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace CSharpCookbook
 {
-    public class CommandTree// : IEnumerable<ICommand>
+    public class CommandTree
     {
 
         private readonly List<ICommand> _commands = new List<ICommand>();
@@ -25,15 +24,5 @@ namespace CSharpCookbook
                 Console.WriteLine();
             }
         }
-
-        //public IEnumerator<ICommand> GetEnumerator()
-        //{
-        //    return _commands.GetEnumerator();
-        //}
-
-        //IEnumerator IEnumerable.GetEnumerator()
-        //{
-        //    return GetEnumerator();
-        //}
     }
 }

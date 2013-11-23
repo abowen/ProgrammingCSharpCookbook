@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSharpCookbook.ManageProgramFlow
+namespace CSharpCookbook.ManageProgramFlow.ParallelFor
 {
     public class ParallelForCancelCommand : ICommand, IMsdn
     {

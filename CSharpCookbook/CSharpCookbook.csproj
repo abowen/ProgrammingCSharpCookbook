@@ -45,9 +45,14 @@
     <Compile Include="ICommand.cs" />
     <Compile Include="IMsdn.cs" />
     <Compile Include="KeyboardListener.cs" />
-    <Compile Include="ManageProgramFlow\ParallelForBreakCommand.cs" />
-    <Compile Include="ManageProgramFlow\ParallelForCancelCommand.cs" />
-    <Compile Include="ManageProgramFlow\ParallelForCommand.cs" />
+    <Compile Include="ManageProgramFlow\ListCommand.cs" />
+    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForStopCommand.cs" />
+    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForBreakCommand.cs" />
+    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForCancelCommand.cs" />
+    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForCommand.cs" />
+    <Compile Include="ManageProgramFlow\PLINQ\AsOrderedCommand.cs" />
+    <Compile Include="ManageProgramFlow\PLINQ\AsParallelCommand.cs" />
+    <Compile Include="ManageProgramFlow\PLINQ\ForAllCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

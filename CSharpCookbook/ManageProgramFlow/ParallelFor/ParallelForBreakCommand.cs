@@ -2,39 +2,22 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSharpCookbook.ManageProgramFlow
+namespace CSharpCookbook.ManageProgramFlow.ParallelFor
 {
     public class ParallelForBreakCommand : ICommand, IMsdn
     {
         public string Description { get { return "Parallel.For Break"; } }
 
         public void Execute()
-        {
-            Console.WriteLine(@"Parallel.For with stop");
-            Parallel.For(0, 10, StopMethod);
+        {            
             Console.WriteLine(@"Parallel.For with break");
             Parallel.For(0, 10, BreakMethod);
         }
 
         /// <summary>
-        /// "Stop" means to stop all iterations as soon as convenient.
-        /// </summary>        
-        private void StopMethod(int i, ParallelLoopState parallelLoopState)
-        {
-            if (i > 5)
-            {
-                Console.WriteLine("Stop {0}", i);
-                parallelLoopState.Stop();
-                return;
-            }
-
-            Console.WriteLine("Log10: {0} {1}", i, Math.Log10(i));
-        }
-
-        /// <summary>
         /// "Break" means complete all iterations on all threads that are prior to the current iteration on the current thread
         /// </summary>        
-        private void BreakMethod(int i, ParallelLoopState parallelLoopState)
+        private static void BreakMethod(int i, ParallelLoopState parallelLoopState)
         {
             if (i > 5)
             {

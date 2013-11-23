@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace CSharpCookbook.ManageProgramFlow
+namespace CSharpCookbook.ManageProgramFlow.ParallelFor
 {
     public class ParallelForCommand : ICommand, IMsdn
     {
@@ -15,7 +15,7 @@ namespace CSharpCookbook.ManageProgramFlow
             Parallel.For(0, 10, squareNumber => Console.WriteLine(squareNumber*squareNumber));            
         }
 
-        private void ExternalMethod(int i)
+        private static void ExternalMethod(int i)
         {
             Console.WriteLine("Square Root: {0} is {1}", i, Math.Sqrt(i));
         }

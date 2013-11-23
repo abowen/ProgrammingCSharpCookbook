@@ -7,14 +7,10 @@ namespace CSharpCookbook
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("START");
             var commandTree = new CommandTree();
-            commandTree.AddCommand(new ParallelForBreakCommand());
-            commandTree.AddCommand(new ParallelForCancelCommand());
-            commandTree.AddCommand(new ParallelForCommand());
-            
-            
+            commandTree.AddCommand(new ListCommand());          
             commandTree.ExecuteCommands();
-
             Console.WriteLine("FINISH");
             Console.ReadLine();
         }
