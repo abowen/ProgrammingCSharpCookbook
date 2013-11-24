@@ -50,9 +50,10 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\BackgroundWorkerCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
-    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\LockCommand.cs" />
-    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\MutexCommand.cs" />
-    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\TaskCancelCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\Locking\LockCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\Locking\MutexCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\LongRunning\TaskCancelCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\AutoResetEventCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\ThreadJoinCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\WaitCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageProgramFlowCommand.cs" />

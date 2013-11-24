@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading.Synchronize
+namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading.LongRunning
 {
     public class TaskCancelCommand : DemoCommand
     {

@@ -1,4 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.ManageProgramFlow.ManageMultithreading.Locking;
+using CSharpCookbook.ManageProgramFlow.ManageMultithreading.LongRunning;
 using CSharpCookbook.ManageProgramFlow.ManageMultithreading.Synchronize;
 
 namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading
@@ -17,6 +19,7 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading
             AddCommand(new MutexCommand());
             AddCommand(new ThreadJoinCommand());
             AddCommand(new TaskCancelCommand());
+            AddCommand(new AutoResetEventCommand());
         }
     }
 }
