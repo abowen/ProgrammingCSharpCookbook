@@ -18,9 +18,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
         public override string Description { get { return "Task.Wait"; } }
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("WaitCommand Entry");
-
+        {            
             var sites = new[] { @"http://www.google.com.au", @"http://www.yahoo.com.au", @"http://www.bing.com.au" };
 
             var stopwatch = Stopwatch.StartNew();
@@ -29,10 +27,10 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
                         .ToArray();
 
             Task.WaitAny(tasks);
-            Console.WriteLine("WaitCommand WaitAny {0}ms", stopwatch.ElapsedMilliseconds);
+            Console.WriteLine("WaitAny {0}ms", stopwatch.ElapsedMilliseconds);
 
             Task.WaitAll(tasks);
-            Console.WriteLine("WaitCommand WaitAll {0}ms", stopwatch.ElapsedMilliseconds);
+            Console.WriteLine("WaitAll {0}ms", stopwatch.ElapsedMilliseconds);
             stopwatch.Stop();            
         }
 

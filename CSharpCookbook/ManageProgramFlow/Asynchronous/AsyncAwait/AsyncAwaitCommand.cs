@@ -14,16 +14,14 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.AsyncAwait
 
         public override string Description
         {
-            get { return "Async"; }
+            get { return "Async & Await"; }
         }
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("Async Enter");
+        {            
             StartAsync();
             Console.WriteLine("Async Sleep for 5s");
-            Thread.Sleep(5000);
-            Console.WriteLine("Async Exit");
+            Thread.Sleep(5000);            
         }
 
         private static async void StartAsync()

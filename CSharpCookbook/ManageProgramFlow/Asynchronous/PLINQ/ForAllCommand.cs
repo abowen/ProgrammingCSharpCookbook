@@ -24,7 +24,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 
             var concurrentList = new ConcurrentQueue<double>();
 
-            ParallelQuery<double> processedValues = values.AsParallel().Select(Process);
+            var processedValues = values.AsParallel().Select(Process);
             processedValues.ForAll(value => concurrentList.Enqueue(Calculate(value)));
         }
 

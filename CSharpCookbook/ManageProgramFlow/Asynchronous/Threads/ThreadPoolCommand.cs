@@ -14,13 +14,11 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Threads
         public override string Description { get { return "ThreadPool"; } }
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("ThreadPoolCommand Entry");
+        {            
             ThreadPool.QueueUserWorkItem(new WaitCallback(ExplicitDelegate));
             ThreadPool.QueueUserWorkItem(ImplicitDelegate);
             ThreadPool.QueueUserWorkItem(state => Console.WriteLine("ThreadPoolCommand Anonymous Method"));
-            Thread.Sleep(1000);
-            Console.WriteLine("ThreadPoolCommand Complete");
+            Thread.Sleep(1000);            
         }
 
         private void ExplicitDelegate(object state)

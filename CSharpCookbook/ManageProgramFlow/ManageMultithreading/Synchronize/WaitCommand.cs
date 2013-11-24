@@ -22,12 +22,10 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading.Synchronize
         }
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("Monitor Start");
+        {            
             var taskConsume = Task.Factory.StartNew(Consume);
             var taskProduce = Task.Factory.StartNew(Produce);
-            Task.WaitAll(taskConsume, taskProduce);
-            Console.WriteLine("Monitor Complete");
+            Task.WaitAll(taskConsume, taskProduce);            
         }
 
         private readonly Queue<int> _list = new Queue<int>();

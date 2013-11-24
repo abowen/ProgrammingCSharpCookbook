@@ -15,8 +15,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
         public override string Description { get { return "Parallel.For Break"; } }
 
         public override void ExecuteDemo()
-        {            
-            Console.WriteLine(@"Parallel.For with break");
+        {                        
             Parallel.For(0, 10, BreakMethod);
         }
 

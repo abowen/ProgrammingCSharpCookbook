@@ -14,10 +14,8 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 
         public override string Description { get { return "Factory.StartNew"; } }
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("StartNewCommand Entry");
+        {            
             Task.Factory.StartNew(Calculate);
-            Console.WriteLine("StartNewCommand Complete");
             Thread.Sleep(5000);
         }
 

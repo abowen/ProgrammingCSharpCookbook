@@ -34,7 +34,10 @@ namespace CSharpCookbook.BaseCommands
                 int.TryParse(key, out value);
                 if (value == 1)
                 {
+                    Console.WriteLine("-- {0} Entry --", Description);
                     ExecuteDemo();
+                    Console.WriteLine("-- {0} Exit -- ", Description);
+                    Console.WriteLine();
                 }
                 else if (value == 2)
                 {

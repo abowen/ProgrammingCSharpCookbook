@@ -15,9 +15,9 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 
         public override void ExecuteDemo()
         {
-            Console.WriteLine(@"Parallel.For with method");
+            Console.WriteLine(@"Using explicit method");
             Parallel.For(0, 10, ExternalMethod);
-            Console.WriteLine(@"Parallel.For with anonymous method");
+            Console.WriteLine(@"Using anonymous method");
             Parallel.For(0, 10, squareNumber => Console.WriteLine(squareNumber*squareNumber));            
         }
 

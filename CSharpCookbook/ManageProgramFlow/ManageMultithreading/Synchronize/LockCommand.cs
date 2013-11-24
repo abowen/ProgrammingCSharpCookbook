@@ -23,13 +23,11 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading.Synchronize
         private readonly object _lockObject = new object();
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("Lock Start");
+        {            
             var taskA = Task.Factory.StartNew(AddValue);
             var taskB = Task.Factory.StartNew(AddValue);
             var tasks = new[] { taskA, taskB };
-            Task.WaitAll(tasks);
-            Console.WriteLine("Lock Complete");
+            Task.WaitAll(tasks);            
         }
 
         private void AddValue()

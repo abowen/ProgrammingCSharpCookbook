@@ -14,8 +14,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
         }
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine(@"Parallel.For with stop");
+        {            
             Parallel.For(0, 10, StopMethod);            
         }
 

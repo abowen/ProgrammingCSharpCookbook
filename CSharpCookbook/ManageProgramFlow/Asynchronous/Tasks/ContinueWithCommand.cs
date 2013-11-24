@@ -16,16 +16,14 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
         public override string Description { get { return "Task.ContinueWith"; } }
 
         public override void ExecuteDemo()
-        {
-            Console.WriteLine("ContinueWithCommand Entry");
+        {            
             var getTask = Task<double>.Factory.StartNew(() =>
             {
                 Console.WriteLine("ContinueWithCommand StartNew");                
                 return Calculate(1000);
             });
             Console.WriteLine("ContinueWithCommand Waiting");
-            getTask.ContinueWith(t => Console.WriteLine("ContinueWithCommand ContinueWith"));
-            Console.WriteLine("ContinueWithCommand Complete");
+            getTask.ContinueWith(t => Console.WriteLine("ContinueWithCommand ContinueWith"));            
             Thread.Sleep(5000);
         }
 
