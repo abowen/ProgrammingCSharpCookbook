@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.ManageProgramFlow.Asynchronous.AsyncAwait;
 using CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor;
 using CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ;
 using CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks;
@@ -26,6 +27,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous
             AddCommand(new ContinueWithCommand());
             AddCommand(new WaitCommand());
             AddCommand(new ThreadPoolCommand());
+            AddCommand(new AsyncAwaitCommand());
         }
 
     }

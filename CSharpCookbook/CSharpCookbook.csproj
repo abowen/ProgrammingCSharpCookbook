@@ -46,6 +46,7 @@
     <Compile Include="ExternalResource.cs" />
     <Compile Include="KeyboardListener.cs" />
     <Compile Include="CSharpCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\AsyncAwait\AsyncAwaitCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\LockCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\WaitCommand.cs" />

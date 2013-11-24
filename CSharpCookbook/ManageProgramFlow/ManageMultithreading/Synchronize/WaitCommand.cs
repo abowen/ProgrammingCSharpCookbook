@@ -12,6 +12,8 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading.Synchronize
         public WaitCommand()
         {
             AddResource("Monitor Class", "http://msdn.microsoft.com/en-us/library/system.threading.monitor.aspx");
+            AddResource("Monitors", "http://msdn.microsoft.com/en-us/library/hf5de04k.aspx");
+            AddResource("Monitor.Wait Method", "http://msdn.microsoft.com/en-us/library/ateab679%28v=vs.110%29.aspx");
         }
         
         public override string Description
