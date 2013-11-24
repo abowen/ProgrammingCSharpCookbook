@@ -4,11 +4,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 {
-    public class AsParallelCommand : ICommand, IMsdn
+    public class AsParallelCommand : Command, IMsdn
     {
-        public string Description { get { return "AsParallel"; } }
+        public override string Description { get { return "AsParallel"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {            
             var values = Enumerable.Range(0, 10).ToArray();
             var filteredValues = from value in values.AsParallel()

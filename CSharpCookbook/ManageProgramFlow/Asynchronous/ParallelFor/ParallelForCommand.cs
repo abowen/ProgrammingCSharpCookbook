@@ -4,11 +4,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
-    public class ParallelForCommand : ICommand, IMsdn
+    public class ParallelForCommand : Command, IMsdn
     {
-        public string Description { get { return "Parallel.For"; } }
+        public override string Description { get { return "Parallel.For"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {
             Console.WriteLine(@"Parallel.For with method");
             Parallel.For(0, 10, ExternalMethod);

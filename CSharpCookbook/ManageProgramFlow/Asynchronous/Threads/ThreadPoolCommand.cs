@@ -4,11 +4,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Threads
 {
-    public class ThreadPoolCommand : ICommand, IMsdn
+    public class ThreadPoolCommand : Command, IMsdn
     {
-        public string Description { get { return "ThreadPool"; } }
+        public override string Description { get { return "ThreadPool"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {
             Console.WriteLine("ThreadPoolCommand Entry");
             ThreadPool.QueueUserWorkItem(new WaitCallback(ExplicitDelegate));

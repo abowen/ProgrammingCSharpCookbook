@@ -4,11 +4,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 {
-    public class AsOrderedCommand : ICommand, IMsdn
+    public class AsOrderedCommand : Command, IMsdn
     {
-        public string Description { get { return "AsOrdered"; } }
+        public override string Description { get { return "AsOrdered"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {            
             var values = Enumerable.Range(0, 10).ToArray();
 

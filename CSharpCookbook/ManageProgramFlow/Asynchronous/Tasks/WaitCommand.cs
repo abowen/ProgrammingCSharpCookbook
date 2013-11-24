@@ -8,11 +8,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class WaitCommand : ICommand, IMsdn
+    public class WaitCommand : Command, IMsdn
     {
-        public string Description { get { return "Task.Wait"; } }
+        public override string Description { get { return "Task.Wait"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {
             Console.WriteLine("WaitCommand Entry");
 

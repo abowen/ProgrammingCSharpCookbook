@@ -6,11 +6,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class ContinueWithCommand : ICommand, IMsdn
+    public class ContinueWithCommand : Command, IMsdn
     {
-        public string Description { get { return "Task.ContinueWith"; } }
+        public override string Description { get { return "Task.ContinueWith"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {
             Console.WriteLine("ContinueWithCommand Entry");
             var getTask = Task<double>.Factory.StartNew(() =>

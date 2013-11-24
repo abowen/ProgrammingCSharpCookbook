@@ -4,11 +4,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
-    public class ParallelForStopCommand : ICommand, IMsdn
+    public class ParallelForStopCommand : Command, IMsdn
     {
-        public string Description { get { return "Parallel.For Stop"; } }
+        public override string Description { get { return "Parallel.For Stop"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {
             Console.WriteLine(@"Parallel.For with stop");
             Parallel.For(0, 10, StopMethod);            

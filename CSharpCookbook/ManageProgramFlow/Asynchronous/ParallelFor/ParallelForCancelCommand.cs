@@ -6,11 +6,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
-    public class ParallelForCancelCommand : ICommand, IMsdn
+    public class ParallelForCancelCommand : Command, IMsdn
     {
-        public string Description { get { return ""; } }
+        public override string Description { get { return "Parallel.For Cancel"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {                        
             var numbers = Enumerable.Range(0, 1000000).ToArray();
 

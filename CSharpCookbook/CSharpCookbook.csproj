@@ -41,10 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommandTree.cs" />
-    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Command.cs" />
     <Compile Include="Interfaces\IMsdn.cs" />
     <Compile Include="KeyboardListener.cs" />
+    <Compile Include="CSharpCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageProgramFlowCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\AsynchronousCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\ParallelFor\ParallelForStopCommand.cs" />

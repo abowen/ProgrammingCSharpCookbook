@@ -5,11 +5,11 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
-    public class ParallelForBreakCommand : ICommand, IMsdn
+    public class ParallelForBreakCommand : Command, IMsdn
     {
-        public string Description { get { return "Parallel.For Break"; } }
+        public override string Description { get { return "Parallel.For Break"; } }
 
-        public void Execute()
+        public override void ExecuteCommand()
         {            
             Console.WriteLine(@"Parallel.For with break");
             Parallel.For(0, 10, BreakMethod);

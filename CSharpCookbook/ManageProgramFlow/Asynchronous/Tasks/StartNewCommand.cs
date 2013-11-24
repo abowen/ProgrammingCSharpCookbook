@@ -5,10 +5,10 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class StartNewCommand : ICommand, IMsdn
+    public class StartNewCommand : Command, IMsdn
     {
-        public string Description { get { return "Factory.StartNew"; } }
-        public void Execute()
+        public override string Description { get { return "Factory.StartNew"; } }
+        public override void ExecuteCommand()
         {
             Console.WriteLine("StartNewCommand Entry");
             Task.Factory.StartNew(Calculate);

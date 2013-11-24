@@ -5,15 +5,15 @@ using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 {
-    public class ForAllCommand : ICommand, IMsdn
+    public class ForAllCommand : Command, IMsdn
     {
-        public string Description { get { return "ParallelQuery.ForAll"; } }
+        public override string Description { get { return "ParallelQuery.ForAll"; } }
 
         /// <summary>
         /// Allows the Calculate method to begin even before the Process methods have finished
         /// i.e. Process result sequence in parallel
         /// </summary>
-        public void Execute()
+        public override void ExecuteCommand()
         {            
             var values = Enumerable.Range(0, 20).ToArray();
 

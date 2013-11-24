@@ -1,17 +1,14 @@
-﻿using CSharpCookbook.Interfaces;
-using CSharpCookbook.ManageProgramFlow.Asynchronous;
+﻿using CSharpCookbook.ManageProgramFlow.Asynchronous;
 
 namespace CSharpCookbook.ManageProgramFlow
 {
-    public class ManageProgramFlowCommand : ICommand
+    public class ManageProgramFlowCommand : Command
     {
-        public string Description { get { return "Manage Program Flow"; } }
+        public override string Description { get { return "Manage Program Flow"; } }
 
-        public void Execute()
+        public ManageProgramFlowCommand()
         {
-            var commandTree = new CommandTree();
-            commandTree.AddCommand(new AsynchronousCommand());
-            commandTree.ExecuteCommands();
+            AddCommand(new AsynchronousCommand());            
         }
     }
 }
