@@ -45,24 +45,28 @@
     <Compile Include="Interfaces\ICommand.cs" />
     <Compile Include="Interfaces\IMsdn.cs" />
     <Compile Include="KeyboardListener.cs" />
-    <Compile Include="ManageProgramFlow\ListCommand.cs" />
-    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForStopCommand.cs" />
-    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForBreakCommand.cs" />
-    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForCancelCommand.cs" />
-    <Compile Include="ManageProgramFlow\ParallelFor\ParallelForCommand.cs" />
-    <Compile Include="ManageProgramFlow\PLINQ\AsOrderedCommand.cs" />
-    <Compile Include="ManageProgramFlow\PLINQ\AsParallelCommand.cs" />
-    <Compile Include="ManageProgramFlow\PLINQ\ForAllCommand.cs" />
-    <Compile Include="ManageProgramFlow\Tasks\ContinueWithCommand.cs" />
-    <Compile Include="ManageProgramFlow\Tasks\TaskWaitCommand.cs" />
-    <Compile Include="ManageProgramFlow\Tasks\TaskFactoryCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageProgramFlowCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\AsynchronousCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\ParallelFor\ParallelForStopCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\ParallelFor\ParallelForBreakCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\ParallelFor\ParallelForCancelCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\ParallelFor\ParallelForCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\PLINQ\AsOrderedCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\PLINQ\AsParallelCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\PLINQ\ForAllCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\Tasks\ContinueWithCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\Tasks\WaitCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\Tasks\StartNewCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ManageProgramFlow\ManageMultithreading\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

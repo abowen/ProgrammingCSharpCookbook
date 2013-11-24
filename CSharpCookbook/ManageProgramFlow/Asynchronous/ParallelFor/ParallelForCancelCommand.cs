@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using CSharpCookbook.Interfaces;
 
-namespace CSharpCookbook.ManageProgramFlow.ParallelFor
+namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
     public class ParallelForCancelCommand : ICommand, IMsdn
     {

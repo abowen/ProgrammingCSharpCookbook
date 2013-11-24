@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using CSharpCookbook.Interfaces;
 
-namespace CSharpCookbook.ManageProgramFlow.Tasks
+namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
     public class ContinueWithCommand : ICommand, IMsdn
     {
@@ -15,8 +15,8 @@ namespace CSharpCookbook.ManageProgramFlow.Tasks
             Console.WriteLine("ContinueWithCommand Entry");
             var getTask = Task<double>.Factory.StartNew(() =>
             {
-                var input = 1000;
-                return Calculate(input);
+                Console.WriteLine("ContinueWithCommand StartNew");                
+                return Calculate(1000);
             });
             Console.WriteLine("ContinueWithCommand Waiting");
             getTask.ContinueWith(t => Console.WriteLine("ContinueWithCommand ContinueWith"));

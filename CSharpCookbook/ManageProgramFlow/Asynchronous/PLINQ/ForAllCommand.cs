@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Linq;
 using CSharpCookbook.Interfaces;
 
-namespace CSharpCookbook.ManageProgramFlow.PLINQ
+namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 {
     public class ForAllCommand : ICommand, IMsdn
     {

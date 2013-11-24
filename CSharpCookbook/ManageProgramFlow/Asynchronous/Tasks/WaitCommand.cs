@@ -6,15 +6,15 @@ using System.Net;
 using System.Threading.Tasks;
 using CSharpCookbook.Interfaces;
 
-namespace CSharpCookbook.ManageProgramFlow.Tasks
+namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class TaskWaitCommand : ICommand, IMsdn
+    public class WaitCommand : ICommand, IMsdn
     {
         public string Description { get { return "Task.Wait"; } }
 
         public void Execute()
         {
-            Console.WriteLine("TaskWaitCommand Entry");
+            Console.WriteLine("WaitCommand Entry");
 
             var sites = new[] { @"http://www.google.com.au", @"http://www.yahoo.com.au", @"http://www.bing.com.au" };
 
@@ -24,10 +24,10 @@ namespace CSharpCookbook.ManageProgramFlow.Tasks
                         .ToArray();
 
             Task.WaitAny(tasks);
-            Console.WriteLine("TaskWaitCommand WaitAny {0}ms", stopwatch.ElapsedMilliseconds);
+            Console.WriteLine("WaitCommand WaitAny {0}ms", stopwatch.ElapsedMilliseconds);
 
             Task.WaitAll(tasks);
-            Console.WriteLine("TaskWaitCommand WaitAll {0}ms", stopwatch.ElapsedMilliseconds);
+            Console.WriteLine("WaitCommand WaitAll {0}ms", stopwatch.ElapsedMilliseconds);
             stopwatch.Stop();            
         }
 

@@ -3,24 +3,24 @@ using System.Threading;
 using System.Threading.Tasks;
 using CSharpCookbook.Interfaces;
 
-namespace CSharpCookbook.ManageProgramFlow.Tasks
+namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class TaskFactoryCommand : ICommand, IMsdn
+    public class StartNewCommand : ICommand, IMsdn
     {
-        public string Description { get { return "Factory.StartNew()"; } }
+        public string Description { get { return "Factory.StartNew"; } }
         public void Execute()
         {
-            Console.WriteLine("TaskFactoryCommand Entry");
+            Console.WriteLine("StartNewCommand Entry");
             Task.Factory.StartNew(Calculate);
-            Console.WriteLine("TaskFactoryCommand Complete");
+            Console.WriteLine("StartNewCommand Complete");
             Thread.Sleep(5000);
         }
 
         private static void Calculate()
         {
-            Console.WriteLine("TaskFactoryCommand Process Entry");
+            Console.WriteLine("StartNewCommand Process Entry");
             Thread.Sleep(2000);
-            Console.WriteLine("TaskFactoryCommand Process Complete");
+            Console.WriteLine("StartNewCommand Process Complete");
         }
 
         public string Title { get { return "Task Class"; } }
