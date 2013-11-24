@@ -37,7 +37,12 @@ namespace CSharpCookbook.BaseCommands
                 var key = Console.ReadLine();
                 var value = -1;
                 int.TryParse(key, out value);
-                if (value > 0)
+
+                if (value > _childrenCommands.Count)
+                {
+                    Console.WriteLine("Out of range {0}", key);
+                }
+                else if (value > 0)
                 {
                     Console.WriteLine();
                     var command = _childrenCommands[value-1];
