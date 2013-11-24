@@ -8,7 +8,6 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading.Synchronize
 {
     public class LockCommand : DemoCommand
     {
-
         public LockCommand()
         {
             AddResource("Monitors", @"http://msdn.microsoft.com/en-us/library/hf5de04k.aspx");
