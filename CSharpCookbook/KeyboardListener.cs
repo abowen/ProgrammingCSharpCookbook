@@ -16,6 +16,7 @@ namespace CSharpCookbook
                 if (Console.ReadKey().KeyChar == 'c')
                 {
                     cancellationTokenSource.Cancel();
+                    Console.WriteLine();
                 }                
             }, cancellationTokenSource.Token);
         }

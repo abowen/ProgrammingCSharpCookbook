@@ -27,8 +27,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 
             try
             {
-                Parallel.ForEach(numbers, parallelOptions, ExternalMethod);
-                
+                Parallel.ForEach(numbers, parallelOptions, ExternalMethod);                
             }
             catch (OperationCanceledException canceledException)
             {

@@ -16,6 +16,7 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading
             AddCommand(new WaitCommand());
             AddCommand(new MutexCommand());
             AddCommand(new ThreadJoinCommand());
+            AddCommand(new TaskCancelCommand());
         }
     }
 }
