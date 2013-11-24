@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CSharpCookbook.Interfaces;
 
 namespace CSharpCookbook.ManageProgramFlow.ParallelFor
 {

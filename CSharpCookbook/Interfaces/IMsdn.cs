@@ -1,4 +1,4 @@
-﻿namespace CSharpCookbook
+﻿namespace CSharpCookbook.Interfaces
 {
     public interface IMsdn
     {

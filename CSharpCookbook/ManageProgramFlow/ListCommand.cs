@@ -1,4 +1,5 @@
-﻿using CSharpCookbook.ManageProgramFlow.ParallelFor;
+﻿using CSharpCookbook.Interfaces;
+using CSharpCookbook.ManageProgramFlow.ParallelFor;
 using CSharpCookbook.ManageProgramFlow.PLINQ;
 using CSharpCookbook.ManageProgramFlow.Tasks;
 
@@ -20,6 +21,7 @@ namespace CSharpCookbook.ManageProgramFlow
             commandTree.AddCommand(new ForAllCommand());
             commandTree.AddCommand(new TaskFactoryCommand());
             commandTree.AddCommand(new ContinueWithCommand());
+            commandTree.AddCommand(new TaskWaitCommand());
             commandTree.ExecuteCommands();
         }
     }
