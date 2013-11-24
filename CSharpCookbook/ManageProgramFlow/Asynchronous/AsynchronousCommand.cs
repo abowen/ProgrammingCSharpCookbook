@@ -26,6 +26,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous
             AddCommand(new StartNewCommand());
             AddCommand(new ContinueWithCommand());
             AddCommand(new WaitCommand());
+            AddCommand(new ThreadCommand());
             AddCommand(new ThreadPoolCommand());
             AddCommand(new BackgroundWorkerCommand());
             AddCommand(new AsyncAwaitCommand());

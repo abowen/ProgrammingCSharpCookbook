@@ -48,6 +48,7 @@
     <Compile Include="CSharpCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\AsyncAwait\AsyncAwaitCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\BackgroundWorkerCommand.cs" />
+    <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\LockCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\WaitCommand.cs" />
