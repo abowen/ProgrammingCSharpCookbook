@@ -2,15 +2,20 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class ContinueWithCommand : Command, IMsdn
+    public class ContinueWithCommand : DemoCommand
     {
+        public ContinueWithCommand()
+        {
+            AddResource("Task.ContinueWith Method", "http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith%28v=vs.110%29.aspx");
+        }
+
         public override string Description { get { return "Task.ContinueWith"; } }
 
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {
             Console.WriteLine("ContinueWithCommand Entry");
             var getTask = Task<double>.Factory.StartNew(() =>
@@ -33,8 +38,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
             Console.WriteLine("ContinueWithCommand Calculate Complete: {0}", result);
             return result;
         }
-
-        public string Title { get { return "Task.ContinueWith Method"; } }
-        public string Website { get { return @"http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith%28v=vs.110%29.aspx"; } }
     }
 }

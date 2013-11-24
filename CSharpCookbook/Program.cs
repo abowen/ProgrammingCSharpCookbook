@@ -1,10 +1,12 @@
-﻿namespace CSharpCookbook
+﻿using CSharpCookbook.BaseCommands;
+
+namespace CSharpCookbook
 {
     class Program
     {
         static void Main()
         {
-            Command command = new CSharpCommand();            
+            DisplayCommand command = new CSharpCommand();            
             command.ExecuteCommand();            
         }
     }

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharpCookbook
+namespace CSharpCookbook.BaseCommands
 {
-    public abstract class Command
+    public abstract class DisplayCommand : IMyCommand
     {
         public abstract string Description { get; }
-        private readonly List<Command> _childrenCommands = new List<Command>();
+        private readonly List<IMyCommand> _childrenCommands = new List<IMyCommand>();
 
-        public void AddCommand(Command command)
+        public void AddCommand(IMyCommand command)
         {
             _childrenCommands.Add(command);
         }
@@ -53,5 +53,11 @@ namespace CSharpCookbook
                 }
             }
         }
+    }
+
+    public interface IMyCommand
+    {
+        string Description { get; }
+        void ExecuteCommand();
     }
 }

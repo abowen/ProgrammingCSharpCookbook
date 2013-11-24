@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class StartNewCommand : Command, IMsdn
+    public class StartNewCommand : DemoCommand
     {
+        public StartNewCommand()
+        {
+            AddResource("Task Class", "http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx");
+        }
+
         public override string Description { get { return "Factory.StartNew"; } }
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {
             Console.WriteLine("StartNewCommand Entry");
             Task.Factory.StartNew(Calculate);
@@ -22,8 +27,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
             Thread.Sleep(2000);
             Console.WriteLine("StartNewCommand Process Complete");
         }
-
-        public string Title { get { return "Task Class"; } }
-        public string Website { get { return @"http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx"; } }
     }
 }

@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Linq;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 {
-    public class AsOrderedCommand : Command, IMsdn
+    public class AsOrderedCommand : DemoCommand
     {
+        public AsOrderedCommand()
+        {
+            AddResource("Introduction to PLINQ", "http://msdn.microsoft.com/en-us/library/dd997425.aspx");
+        }
+
         public override string Description { get { return "AsOrdered"; } }
 
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {            
             var values = Enumerable.Range(0, 10).ToArray();
 
@@ -19,10 +24,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
             var output = string.Join(",", filteredValues);
             Console.WriteLine(output);
         }
-
-        
-
-        public string Title { get { return "Introduction to PLINQ"; } }
-        public string Website { get { return "http://msdn.microsoft.com/en-us/library/dd997425.aspx"; } }        
     }
 }

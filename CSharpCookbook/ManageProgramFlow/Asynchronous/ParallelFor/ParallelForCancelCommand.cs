@@ -2,15 +2,20 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
-    public class ParallelForCancelCommand : Command, IMsdn
+    public class ParallelForCancelCommand : DemoCommand
     {
         public override string Description { get { return "Parallel.For Cancel"; } }
 
-        public override void ExecuteCommand()
+        public ParallelForCancelCommand()
+        {
+            AddResource("Cancel a Parallel.For or ForEach Loop", "http://msdn.microsoft.com/en-us/library/ee256691%28v=vs.110%29.aspx");
+        }
+
+        public override void ExecuteDemo()
         {                        
             var numbers = Enumerable.Range(0, 1000000).ToArray();
 
@@ -28,8 +33,7 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
             catch (OperationCanceledException canceledException)
             {
                 Console.WriteLine(canceledException.Message);
-            }            
-            
+            }                        
         }
 
         private static void ExternalMethod(int i)
@@ -37,9 +41,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
             Console.WriteLine("Sinh: {0} {1}", i, Math.Sinh(i));
             Thread.Sleep(1000);            
         }
-
-
-        public string Website { get { return "http://msdn.microsoft.com/en-us/library/ee256691%28v=vs.110%29.aspx"; } }
-        public string Title { get { return "Cancel a Parallel.For or ForEach Loop"; } }
     }
 }

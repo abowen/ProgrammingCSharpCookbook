@@ -4,15 +4,20 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
 {
-    public class WaitCommand : Command, IMsdn
+    public class WaitCommand : DemoCommand
     {
+        public WaitCommand()
+        {
+            AddResource("Task.WaitAny", "http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.waitany%28v=vs.110%29.aspx");
+        }
+
         public override string Description { get { return "Task.Wait"; } }
 
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {
             Console.WriteLine("WaitCommand Entry");
 
@@ -39,8 +44,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks
                 Contract.Assert(!string.IsNullOrWhiteSpace(download));
             }                        
         }
-
-        public string Title { get { return "Task.WaitAny Method"; } }
-        public string Website { get { return @"http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.waitany%28v=vs.110%29.aspx"; } }
     }
 }

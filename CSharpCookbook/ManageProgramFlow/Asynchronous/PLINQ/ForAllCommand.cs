@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Linq;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
 {
-    public class ForAllCommand : Command, IMsdn
+    public class ForAllCommand : DemoCommand
     {
+        public ForAllCommand()
+        {
+            AddResource("The ForAll Operator", "http://msdn.microsoft.com/en-us/library/dd997425.aspx");
+        }
+
         public override string Description { get { return "ParallelQuery.ForAll"; } }
 
         /// <summary>
         /// Allows the Calculate method to begin even before the Process methods have finished
         /// i.e. Process result sequence in parallel
         /// </summary>
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {            
             var values = Enumerable.Range(0, 20).ToArray();
 
@@ -34,8 +39,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ
             Console.WriteLine("ForAll Calculate: {0}", value);
             return Math.Sqrt(value);
         }
-
-        public string Title { get { return "The ForAll Operator"; } }
-        public string Website { get { return "http://msdn.microsoft.com/en-us/library/dd997425.aspx"; } }        
     }
 }

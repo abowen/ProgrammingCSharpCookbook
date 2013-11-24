@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 {
-    public class ParallelForBreakCommand : Command, IMsdn
+    public class ParallelForBreakCommand : DemoCommand
     {
+        public ParallelForBreakCommand()
+        {
+            AddResource("Stop or Break from a Parallel.For Loop", "http://msdn.microsoft.com/en-us/library/dd460721%28v=vs.110%29.aspx");
+        }
+
         public override string Description { get { return "Parallel.For Break"; } }
 
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {            
             Console.WriteLine(@"Parallel.For with break");
             Parallel.For(0, 10, BreakMethod);
@@ -29,9 +34,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor
 
             Console.WriteLine("Pow: {0} {1}", i, Math.Pow(i, i));
         }
-
-
-        public string Title { get { return "Stop or Break from a Parallel.For Loop"; } }
-        public string Website { get { return "http://msdn.microsoft.com/en-us/library/dd460721%28v=vs.110%29.aspx"; } }
     }
 }

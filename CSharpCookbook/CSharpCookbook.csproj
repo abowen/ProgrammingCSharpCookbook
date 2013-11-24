@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command.cs" />
-    <Compile Include="Interfaces\IMsdn.cs" />
+    <Compile Include="BaseCommands\DemoCommand.cs" />
+    <Compile Include="BaseCommands\DisplayCommand.cs" />
+    <Compile Include="ExternalResource.cs" />
     <Compile Include="KeyboardListener.cs" />
     <Compile Include="CSharpCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\LockCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\WaitCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageProgramFlowCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\AsynchronousCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\ParallelFor\ParallelForStopCommand.cs" />
@@ -64,9 +68,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ManageProgramFlow\ManageMultithreading\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

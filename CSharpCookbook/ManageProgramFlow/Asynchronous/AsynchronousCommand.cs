@@ -1,11 +1,12 @@
-﻿using CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor;
+﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.ManageProgramFlow.Asynchronous.ParallelFor;
 using CSharpCookbook.ManageProgramFlow.Asynchronous.PLINQ;
 using CSharpCookbook.ManageProgramFlow.Asynchronous.Tasks;
 using CSharpCookbook.ManageProgramFlow.Asynchronous.Threads;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous
 {
-    public class AsynchronousCommand : Command
+    public class AsynchronousCommand : DisplayCommand
     {
         public override string Description
         {

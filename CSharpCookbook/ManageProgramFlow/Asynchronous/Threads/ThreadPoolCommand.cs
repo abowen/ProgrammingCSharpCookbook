@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Threading;
-using CSharpCookbook.Interfaces;
+using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Threads
 {
-    public class ThreadPoolCommand : Command, IMsdn
+    public class ThreadPoolCommand : DemoCommand
     {
+        public ThreadPoolCommand()
+        {
+            AddResource("Thread Pooling", "http://msdn.microsoft.com/en-us/library/h4732ks0.aspx");
+        }
+
         public override string Description { get { return "ThreadPool"; } }
 
-        public override void ExecuteCommand()
+        public override void ExecuteDemo()
         {
             Console.WriteLine("ThreadPoolCommand Entry");
             ThreadPool.QueueUserWorkItem(new WaitCallback(ExplicitDelegate));
@@ -27,8 +32,5 @@ namespace CSharpCookbook.ManageProgramFlow.Asynchronous.Threads
         {
             Console.WriteLine("ThreadPoolCommand ImplicitDelegate");
         }
-
-        public string Title { get { return "Thread Pooling"; } }
-        public string Website { get { return @"http://msdn.microsoft.com/en-us/library/h4732ks0.aspx"; } }
     }
 }
