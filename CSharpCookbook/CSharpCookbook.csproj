@@ -52,6 +52,7 @@
     <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\LockCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\MutexCommand.cs" />
+    <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\ThreadJoinCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Synchronize\WaitCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageProgramFlowCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\AsynchronousCommand.cs" />

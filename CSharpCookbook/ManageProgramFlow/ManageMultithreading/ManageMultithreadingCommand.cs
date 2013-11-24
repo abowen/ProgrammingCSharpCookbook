@@ -12,9 +12,10 @@ namespace CSharpCookbook.ManageProgramFlow.ManageMultithreading
 
         public ManageMultithreadingCommand()
         {
-            AddCommand(new LockCommand());            
+            AddCommand(new LockCommand());
             AddCommand(new WaitCommand());
-            AddCommand(new MutexCommand());            
+            AddCommand(new MutexCommand());
+            AddCommand(new ThreadJoinCommand());
         }
     }
 }
