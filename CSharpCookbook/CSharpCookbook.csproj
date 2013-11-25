@@ -68,6 +68,8 @@
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\ConditionalCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Operators\BitwiseCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Operators\GlobalCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\NullCoalescingCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ProgramFlowCommand.cs" />
     <Compile Include="Program.cs" />
