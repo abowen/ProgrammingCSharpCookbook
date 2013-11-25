@@ -1,6 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ManageProgramFlow.Asynchronous;
 using CSharpCookbook.ManageProgramFlow.ManageMultithreading;
+using CSharpCookbook.ManageProgramFlow.ProgramFlow;
 
 namespace CSharpCookbook.ManageProgramFlow
 {
@@ -11,7 +12,8 @@ namespace CSharpCookbook.ManageProgramFlow
         public ManageProgramFlowCommand()
         {
             AddCommand(new AsynchronousCommand());
-            AddCommand(new ManageMultithreadingCommand());            
+            AddCommand(new ManageMultithreadingCommand());
+            AddCommand(new ProgramFlowCommand());
         }
     }
 }

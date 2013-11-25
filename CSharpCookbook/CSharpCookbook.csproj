@@ -70,13 +70,18 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Tasks\WaitCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Tasks\StartNewCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\ProgramFlowCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ManageProgramFlow\ProgramFlow\Expressions\" />
+    <Folder Include="ManageProgramFlow\ProgramFlow\Iteration\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
