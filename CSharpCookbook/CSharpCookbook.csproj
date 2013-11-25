@@ -70,6 +70,7 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Tasks\WaitCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Tasks\StartNewCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ProgramFlowCommand.cs" />
     <Compile Include="Program.cs" />
@@ -81,6 +82,7 @@
   <ItemGroup>
     <Folder Include="ManageProgramFlow\ProgramFlow\Expressions\" />
     <Folder Include="ManageProgramFlow\ProgramFlow\Iteration\" />
+    <Folder Include="ManageProgramFlow\ProgramFlow\Operators\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

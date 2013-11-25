@@ -13,7 +13,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
         public ProgramFlowCommand()
         {
             AddCommand(new SwitchCommand());
-            
+            AddCommand(new GotoCaseCommand());            
         }
     }
 }
