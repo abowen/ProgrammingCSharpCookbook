@@ -1,5 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.ConditionalLogic;
+using CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Operators;
 
 namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
@@ -19,6 +20,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
             AddCommand(new ConditionalCommand());
             AddCommand(new BitwiseCommand());
             AddCommand(new GlobalCommand());
+            AddCommand(new IteratorCommand());
         }
     }
 }
