@@ -13,7 +13,7 @@ namespace CSharpCookbook.ManageProgramFlow
         {
             AddCommand(new AsynchronousCommand());
             AddCommand(new ManageMultithreadingCommand());
-            AddCommand(new ProgramFlowCommand());
+            AddCommand(new ProgramFlowCommand());            
         }
     }
 }

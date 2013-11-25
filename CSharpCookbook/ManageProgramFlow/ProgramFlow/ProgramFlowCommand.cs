@@ -1,5 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.ConditionalLogic;
+using CSharpCookbook.ManageProgramFlow.ProgramFlow.Operators;
 
 namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
 {
@@ -13,7 +14,9 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
         public ProgramFlowCommand()
         {
             AddCommand(new SwitchCommand());
-            AddCommand(new GotoCaseCommand());            
+            AddCommand(new GotoCaseCommand());
+            AddCommand(new NullCoalescingCommand());
+            AddCommand(new ConditionalCommand());
         }
     }
 }
