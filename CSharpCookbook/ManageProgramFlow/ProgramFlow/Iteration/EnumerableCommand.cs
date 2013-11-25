@@ -6,16 +6,16 @@ using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration
 {
-    public class IteratorCommand : DemoCommand
+    public class EnumerableCommand : DemoCommand
     {
-        public IteratorCommand()
+        public EnumerableCommand()
         {
             AddResource("Using Iterators", "http://msdn.microsoft.com/en-us/library/vstudio/65zzykke(v=vs.100).aspx");
         }
 
         public override string Description
         {
-            get { return "Iterator"; }
+            get { return "Enumerable"; }
         }
 
         public override void ExecuteDemo()

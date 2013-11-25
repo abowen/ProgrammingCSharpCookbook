@@ -20,7 +20,8 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
             AddCommand(new ConditionalCommand());
             AddCommand(new BitwiseCommand());
             AddCommand(new GlobalCommand());
-            AddCommand(new IteratorCommand());
+            AddCommand(new EnumerableCommand());
+            AddCommand(new IndexerCommand());
         }
     }
 }

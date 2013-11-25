@@ -67,7 +67,8 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\IteratorCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\IndexerCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\EnumerableCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\ConditionalCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\BitwiseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\GlobalCommand.cs" />
