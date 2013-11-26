@@ -8,6 +8,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions
         public BasicExpressionCommand()
         {
             AddResource("Expressions", "http://msdn.microsoft.com/en-us/library/ms173144.aspx");
+            AddResource("Expressions and Operators", "C# in a NutShell, Location 2898");
         }
 
         public override string Description
@@ -17,23 +18,13 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions
 
         public override void ExecuteDemo()
         {
-            Console.WriteLine("Assignment Expression");
-            var number = 5;
-            Console.WriteLine(number);
-            Console.WriteLine();
-            Console.WriteLine("Value Expression");            
-            Console.WriteLine("1 + 1 = {0}", 1 + 1);
-            Console.WriteLine();
-            Console.WriteLine("Invocation Expression");
-            SimpleMethod();
+            Console.WriteLine("Constant Expression {0}", 12);
+            const int number = 5;
+            Console.WriteLine("Assignment Expression {0}", number);
+            Console.WriteLine("Value Expression {0}", 1 + 1);
+            Console.WriteLine("Void Invocation Expression");
             Console.WriteLine();
         }
-
-        private void SimpleMethod()
-        {
-            Console.WriteLine("-- Code inside method");
-        }
-
     }
 }
 

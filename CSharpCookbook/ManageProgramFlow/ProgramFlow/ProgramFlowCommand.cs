@@ -1,5 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.ConditionalLogic;
+using CSharpCookbook.ManageProgramFlow.ProgramFlow.EventsAndCallBacks;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Operators;
@@ -27,6 +28,10 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
             AddCommand(new QueryExpressionCommand());
             AddCommand(new LambdaExpressionCommand());
             AddCommand(new ExpressionTreeCommand());
+            AddCommand(new DelegateCommand());
+            AddCommand(new EventHandlerCommand());
+            AddCommand(new EventHandlerGenericCommand());
+            AddCommand(new EventArgsCommand());
         }
     }
 }

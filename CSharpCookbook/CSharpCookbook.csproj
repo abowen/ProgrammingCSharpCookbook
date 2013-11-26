@@ -67,6 +67,10 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\EventArgsCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\DelegateCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\EventHandlerGenericCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\EventHandlerCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\BasicExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\ExpressionTreeCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\LambdaExpressionCommand.cs" />
