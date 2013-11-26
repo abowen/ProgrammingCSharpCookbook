@@ -25,6 +25,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
             AddCommand(new IndexerCommand());
             AddCommand(new BasicExpressionCommand());
             AddCommand(new QueryExpressionCommand());
+            AddCommand(new LambdaExpressionCommand());
         }
     }
 }
