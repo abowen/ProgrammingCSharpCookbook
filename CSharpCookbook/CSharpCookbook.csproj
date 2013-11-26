@@ -67,6 +67,8 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\BasicExpressionCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\QueryExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\IndexerCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\EnumerableCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\ConditionalCommand.cs" />
@@ -80,9 +82,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ManageProgramFlow\ProgramFlow\Expressions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
