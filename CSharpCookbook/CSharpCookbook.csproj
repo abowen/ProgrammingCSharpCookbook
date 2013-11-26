@@ -68,6 +68,7 @@
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\BasicExpressionCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\ExpressionTreeCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\LambdaExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\QueryExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\IndexerCommand.cs" />

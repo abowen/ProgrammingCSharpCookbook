@@ -1,5 +1,4 @@
-﻿using System;
-using CSharpCookbook.BaseCommands;
+﻿using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Operators
 {

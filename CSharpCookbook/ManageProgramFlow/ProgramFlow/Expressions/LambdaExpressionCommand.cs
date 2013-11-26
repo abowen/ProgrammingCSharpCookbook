@@ -19,7 +19,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions
 
         public override void ExecuteDemo()
         {
-            CustomDelegate customDelegate = x => x * x;
+            CustomDelegate customDelegate = x => x * x;            
             Console.WriteLine("Delegate {0} is {1}", 5, customDelegate(5)); 
         }
     }
