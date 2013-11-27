@@ -45,6 +45,10 @@
     <Compile Include="ManageProgramFlow\Asynchronous\ConcurrentCollections\ConcurrentStackCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\BackgroundWorkerCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadCommand.cs" />
+    <Compile Include="ManageProgramFlow\EventsAndCallBacks\EventsAndCallbacksCommand.cs" />
+    <Compile Include="ManageProgramFlow\Exceptions\ExceptionHandling\TryCatchFinallyCommand.cs" />
+    <Compile Include="ManageProgramFlow\Exceptions\ExceptionHandling\DivideByZeroExceptionCommand.cs" />
+    <Compile Include="ManageProgramFlow\Exceptions\ExceptionsCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Locking\LockCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Locking\MutexCommand.cs" />
@@ -67,10 +71,10 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadPoolCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoCaseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\SwitchCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\EventArgsCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\DelegateCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\EventHandlerGenericCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\EventsAndCallBacks\EventHandlerCommand.cs" />
+    <Compile Include="ManageProgramFlow\EventsAndCallBacks\Events\EventArgsCommand.cs" />
+    <Compile Include="ManageProgramFlow\EventsAndCallBacks\Delegates\DelegateCommand.cs" />
+    <Compile Include="ManageProgramFlow\EventsAndCallBacks\Events\EventHandlerGenericCommand.cs" />
+    <Compile Include="ManageProgramFlow\EventsAndCallBacks\Events\EventHandlerCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\BasicExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\ExpressionTreeCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\LambdaExpressionCommand.cs" />
@@ -88,7 +92,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ManageProgramFlow\Exceptions\ExceptionThrowing\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

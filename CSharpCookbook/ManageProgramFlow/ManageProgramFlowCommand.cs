@@ -1,5 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ManageProgramFlow.Asynchronous;
+using CSharpCookbook.ManageProgramFlow.EventsAndCallBacks;
+using CSharpCookbook.ManageProgramFlow.Exceptions;
 using CSharpCookbook.ManageProgramFlow.ManageMultithreading;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow;
 
@@ -13,7 +15,9 @@ namespace CSharpCookbook.ManageProgramFlow
         {
             AddCommand(new AsynchronousCommand());
             AddCommand(new ManageMultithreadingCommand());
-            AddCommand(new ProgramFlowCommand());            
+            AddCommand(new ProgramFlowCommand());
+            AddCommand(new EventsAndCallbacksCommand());
+            AddCommand(new ExceptionsCommand());
         }
     }
 }
