@@ -46,9 +46,12 @@
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\BackgroundWorkerCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\Threads\ThreadCommand.cs" />
     <Compile Include="ManageProgramFlow\EventsAndCallBacks\EventsAndCallbacksCommand.cs" />
+    <Compile Include="ManageProgramFlow\Exceptions\ExceptionHandling\CatchTypedCommand.cs" />
     <Compile Include="ManageProgramFlow\Exceptions\ExceptionHandling\TryCatchFinallyCommand.cs" />
     <Compile Include="ManageProgramFlow\Exceptions\ExceptionHandling\DivideByZeroExceptionCommand.cs" />
     <Compile Include="ManageProgramFlow\Exceptions\ExceptionsCommand.cs" />
+    <Compile Include="ManageProgramFlow\Exceptions\ExceptionThrowing\RethrowCommand.cs" />
+    <Compile Include="ManageProgramFlow\Exceptions\ExceptionThrowing\CustomExceptionCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\ManageMultithreadingCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Locking\LockCommand.cs" />
     <Compile Include="ManageProgramFlow\ManageMultithreading\Locking\MutexCommand.cs" />
@@ -92,9 +95,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ManageProgramFlow\Exceptions\ExceptionThrowing\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

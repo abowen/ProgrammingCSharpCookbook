@@ -1,5 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionHandling;
+using CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionThrowing;
 
 namespace CSharpCookbook.ManageProgramFlow.Exceptions
 {
@@ -13,7 +14,10 @@ namespace CSharpCookbook.ManageProgramFlow.Exceptions
         public ExceptionsCommand()
         {
             AddCommand(new DivideByZeroExceptionCommand());
-            AddCommand(new TryCatchFinallyCommand());            
+            AddCommand(new TryCatchFinallyCommand());
+            AddCommand(new CatchTypedCommand());
+            AddCommand(new CustomExceptionCommand());
+            AddCommand(new RethrowCommand());            
         }
     }
 }
