@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Types;
 
 namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
@@ -15,6 +16,9 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new ClassCommand());
             AddCommand(new StructCommand());
             AddCommand(new GenericClassCommand());
+            AddCommand(new BaseCommand());
+            AddCommand(new StaticCommand());
+            AddCommand(new PrivateCommand());
         }
     }
 }
