@@ -29,7 +29,7 @@ namespace CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionHandling
                 Console.WriteLine("Try");
                 ThrowException(throwException);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Console.WriteLine("Caught");                
             }

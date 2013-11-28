@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes;
 using CSharpCookbook.ManageProgramFlow;
 
 namespace CSharpCookbook
@@ -9,7 +10,8 @@ namespace CSharpCookbook
 
         public CSharpCommand()
         {
-            AddCommand(new ManageProgramFlowCommand());            
+            AddCommand(new ManageProgramFlowCommand());
+            AddCommand(new CreateAndUseTypesCommand());
         }
     }
 }
