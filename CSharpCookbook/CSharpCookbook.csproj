@@ -44,6 +44,10 @@
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\PrivateCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\CreateTypesCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateAndUseTypesCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Methods\NewCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Methods\ExtensionCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Methods\VirtualCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Methods\OptionalCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\ClassCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Generics\GenericClassCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\StructCommand.cs" />
