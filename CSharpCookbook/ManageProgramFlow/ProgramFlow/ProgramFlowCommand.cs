@@ -1,7 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
-using CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionHandling;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.ConditionalLogic;
-using CSharpCookbook.ManageProgramFlow.ProgramFlow.EventsAndCallBacks;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration;
 using CSharpCookbook.ManageProgramFlow.ProgramFlow.Operators;
@@ -22,13 +20,13 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
             AddCommand(new NullCoalescingCommand());
             AddCommand(new ConditionalCommand());
             AddCommand(new BitwiseCommand());
-            AddCommand(new GlobalCommand());
-            AddCommand(new EnumerableCommand());
-            AddCommand(new IndexerCommand());
+            AddCommand(new GlobalCommand());            
             AddCommand(new BasicExpressionCommand());
             AddCommand(new QueryExpressionCommand());
             AddCommand(new LambdaExpressionCommand());
-            AddCommand(new ExpressionTreeCommand());                        
+            AddCommand(new ExpressionTreeCommand());
+            AddCommand(new ArrayForEachCommand());
+            AddCommand(new ListForEachCommand());
         }
     }
 }

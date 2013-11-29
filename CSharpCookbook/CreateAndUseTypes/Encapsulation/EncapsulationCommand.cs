@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.Encapsulation.Interfaces;
 using CSharpCookbook.CreateAndUseTypes.Encapsulation.Properties;
 
 namespace CSharpCookbook.CreateAndUseTypes.Encapsulation
@@ -12,7 +13,8 @@ namespace CSharpCookbook.CreateAndUseTypes.Encapsulation
 
         public EncapsulationCommand()
         {
-            AddCommand(new PropertiesCommand());            
+            AddCommand(new PropertiesCommand());
+            AddCommand(new ExplicitCommand());            
         }
     }
 }

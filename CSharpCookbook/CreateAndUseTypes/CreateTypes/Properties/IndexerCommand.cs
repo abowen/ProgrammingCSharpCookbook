@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration
+namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Properties
 {
     public class IndexerCommand : DemoCommand
     {

@@ -1,6 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Methods;
+using CSharpCookbook.CreateAndUseTypes.CreateTypes.Properties;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Types;
 
 namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
@@ -24,7 +25,8 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new VirtualCommand());
             AddCommand(new ExtensionCommand());
             AddCommand(new NewCommand());
-            AddCommand(new OverloadCommand());            
+            AddCommand(new OverloadCommand());
+            AddCommand(new IndexerCommand());
         }
     }
 }

@@ -14,6 +14,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy
         {
             AddCommand(new InterfaceCommand());
             AddCommand(new ComparableCommand());
+            AddCommand(new EnumerableCommand());
         }
     }
 }

@@ -62,6 +62,7 @@
     <Compile Include="CreateAndUseTypes\CreateTypes\Generics\GenericClassCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\StructCommand.cs" />
     <Compile Include="CreateAndUseTypes\Encapsulation\EncapsulationCommand.cs" />
+    <Compile Include="CreateAndUseTypes\Encapsulation\Interfaces\ExplicitCommand.cs" />
     <Compile Include="CreateAndUseTypes\Encapsulation\Properties\PropertiesCommand.cs" />
     <Compile Include="ExternalResource.cs" />
     <Compile Include="KeyboardListener.cs" />
@@ -107,8 +108,10 @@
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\ExpressionTreeCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\LambdaExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\QueryExpressionCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\IndexerCommand.cs" />
-    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\EnumerableCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Properties\IndexerCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ClassHierarchy\Interfaces\EnumerableCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\ArrayForEachCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Iteration\ListForEachCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\ConditionalCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\BitwiseCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Operators\GlobalCommand.cs" />

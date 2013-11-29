@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration
+namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Interfaces
 {
     public class EnumerableCommand : DemoCommand
     {
@@ -20,12 +20,12 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Iteration
 
         public override void ExecuteDemo()
         {
-            var someEnumerable = new SomeEnumerable();
-            var output = string.Join(",", someEnumerable);
-            Console.WriteLine(output);
+            var myEnumerableClass = new MyEnumerableClass();            
+            var output = string.Join(",", myEnumerableClass);
+            Console.WriteLine(output);            
         }
 
-        public class SomeEnumerable : IEnumerable<int>
+        public class MyEnumerableClass : IEnumerable<int>
         {
             IEnumerator<int> IEnumerable<int>.GetEnumerator()
             {
