@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.ClassHierarchy;
 using CSharpCookbook.CreateAndUseTypes.ConsumeTypes;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes;
 using CSharpCookbook.CreateAndUseTypes.Encapsulation;
@@ -14,6 +15,7 @@ namespace CSharpCookbook.CreateAndUseTypes
             AddCommand(new CreateTypesCommand());
             AddCommand(new ConsumeTypesCommand());
             AddCommand(new EncapsulationCommand());
+            AddCommand(new ClassHierarchyCommand());
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.EventsAndCallBacks
+namespace CSharpCookbook.ManageProgramFlow.EventsAndCallBacks.Delegates
 {
     public class DelegateCommand : DemoCommand
     {

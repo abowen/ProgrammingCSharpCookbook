@@ -40,6 +40,9 @@
   <ItemGroup>
     <Compile Include="BaseCommands\DemoCommand.cs" />
     <Compile Include="BaseCommands\DisplayCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ClassHierarchy\ClassHierarchyCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ClassHierarchy\Interfaces\ComparableCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ClassHierarchy\Interfaces\InterfaceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Boxing\BoxingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConvertCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\CastCommand.cs" />
