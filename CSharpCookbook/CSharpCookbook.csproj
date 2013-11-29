@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -41,6 +42,8 @@
     <Compile Include="BaseCommands\DisplayCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Boxing\BoxingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConvertCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\CastCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\DynamicCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\ConsumeTypesCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\BaseCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\StaticCommand.cs" />
@@ -55,6 +58,8 @@
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\ClassCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Generics\GenericClassCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\StructCommand.cs" />
+    <Compile Include="CreateAndUseTypes\Encapsulation\EncapsulationCommand.cs" />
+    <Compile Include="CreateAndUseTypes\Encapsulation\Properties\PropertiesCommand.cs" />
     <Compile Include="ExternalResource.cs" />
     <Compile Include="KeyboardListener.cs" />
     <Compile Include="CSharpCommand.cs" />

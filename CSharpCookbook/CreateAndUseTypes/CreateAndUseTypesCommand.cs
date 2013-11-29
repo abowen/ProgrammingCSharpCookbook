@@ -1,6 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.CreateAndUseTypes.ConsumeTypes;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes;
+using CSharpCookbook.CreateAndUseTypes.Encapsulation;
 
 namespace CSharpCookbook.CreateAndUseTypes
 {
@@ -12,6 +13,7 @@ namespace CSharpCookbook.CreateAndUseTypes
         {
             AddCommand(new CreateTypesCommand());
             AddCommand(new ConsumeTypesCommand());
+            AddCommand(new EncapsulationCommand());
         }
     }
 }

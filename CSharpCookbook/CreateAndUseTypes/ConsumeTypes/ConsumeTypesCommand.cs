@@ -14,7 +14,9 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes
         public ConsumeTypesCommand()
         {
             AddCommand(new BoxingCommand());
-            AddCommand(new ConvertCommand());            
+            AddCommand(new ConvertCommand());
+            AddCommand(new CastCommand());
+            AddCommand(new DynamicCommand());
         }
     }
 }
