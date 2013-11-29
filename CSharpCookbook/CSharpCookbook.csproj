@@ -39,11 +39,15 @@
   <ItemGroup>
     <Compile Include="BaseCommands\DemoCommand.cs" />
     <Compile Include="BaseCommands\DisplayCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\Boxing\BoxingCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConvertCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\ConsumeTypesCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\BaseCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\StaticCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\PrivateCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\CreateTypesCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateAndUseTypesCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Methods\OverloadCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Methods\NewCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Methods\ExtensionCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Methods\VirtualCommand.cs" />

@@ -24,6 +24,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new VirtualCommand());
             AddCommand(new ExtensionCommand());
             AddCommand(new NewCommand());
+            AddCommand(new OverloadCommand());            
         }
     }
 }
