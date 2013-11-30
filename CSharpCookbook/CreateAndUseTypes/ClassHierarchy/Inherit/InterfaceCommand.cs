@@ -1,7 +1,7 @@
 ﻿using System;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Interfaces
+namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Inherit
 {
     public class InterfaceCommand : DemoCommand
     {
@@ -12,7 +12,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Interfaces
 
         public override string Description
         {
-            get { return "Interfaces"; }
+            get { return "Interface Inheritance"; }
         }
 
         public override void ExecuteDemo()

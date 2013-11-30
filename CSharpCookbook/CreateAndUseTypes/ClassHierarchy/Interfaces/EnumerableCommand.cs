@@ -15,7 +15,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Interfaces
 
         public override string Description
         {
-            get { return "Enumerable"; }
+            get { return "IEnumerable"; }
         }
 
         public override void ExecuteDemo()

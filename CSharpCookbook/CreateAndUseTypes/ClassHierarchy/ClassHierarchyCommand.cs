@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Inherit;
 using CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Interfaces;
 
 namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy
@@ -13,8 +14,10 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy
         public ClassHierarchyCommand()
         {
             AddCommand(new InterfaceCommand());
+            AddCommand(new AbstractCommand());
             AddCommand(new ComparableCommand());
             AddCommand(new EnumerableCommand());
+            AddCommand(new DispoableCommand());
         }
     }
 }
