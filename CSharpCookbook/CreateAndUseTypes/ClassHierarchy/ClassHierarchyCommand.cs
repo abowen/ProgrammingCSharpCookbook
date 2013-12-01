@@ -13,6 +13,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy
 
         public ClassHierarchyCommand()
         {
+            AddCommand(new ClassCommand());
             AddCommand(new InterfaceCommand());
             AddCommand(new AbstractCommand());
             AddCommand(new ComparableCommand());

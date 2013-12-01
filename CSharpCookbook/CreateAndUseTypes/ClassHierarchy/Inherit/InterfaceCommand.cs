@@ -17,16 +17,16 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Inherit
 
         public override void ExecuteDemo()
         {
-            ICustomInterface customInterface = new MyCustomInterfaceClass();
-            customInterface.MyGetSetValue = "MyGetSetValue";
-            Console.WriteLine(customInterface.MyGetSetValue);
-            Console.WriteLine(customInterface.MyGetValue);
+            IMyInterface myInterface = new MyInterfaceClass();
+            myInterface.MyGetSetValue = "MyGetSetValue";
+            Console.WriteLine(myInterface.MyGetSetValue);
+            Console.WriteLine(myInterface.MyGetValue);
         }
     }
 
-    public class MyCustomInterfaceClass : ICustomInterface
+    public class MyInterfaceClass : IMyInterface
     {
-        public MyCustomInterfaceClass()
+        public MyInterfaceClass()
         {
             MyGetValue = "MyGetValue";
         }
@@ -35,7 +35,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Inherit
         public string MyGetValue { get; private set; }
     }
 
-    public interface ICustomInterface
+    public interface IMyInterface
     {
         string MyGetSetValue { get; set; }
         string MyGetValue { get; }
