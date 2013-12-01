@@ -3,6 +3,7 @@ using CSharpCookbook.CreateAndUseTypes.ClassHierarchy;
 using CSharpCookbook.CreateAndUseTypes.ConsumeTypes;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes;
 using CSharpCookbook.CreateAndUseTypes.Encapsulation;
+using CSharpCookbook.CreateAndUseTypes.Reflection;
 
 namespace CSharpCookbook.CreateAndUseTypes
 {
@@ -16,6 +17,7 @@ namespace CSharpCookbook.CreateAndUseTypes
             AddCommand(new ConsumeTypesCommand());
             AddCommand(new EncapsulationCommand());
             AddCommand(new ClassHierarchyCommand());
+            AddCommand(new ReflectionCommand());
         }
     }
 }

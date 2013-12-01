@@ -8,6 +8,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ClassHierarchy.Inherit
         public AbstractCommand()
         {
             AddResource("Abstract", "http://msdn.microsoft.com/en-us/library/sf985hc5.aspx");
+            AddResource("Abstract and Sealed Classes", "http://msdn.microsoft.com/en-us/library/ms173150.aspx");
         }
 
         public override string Description

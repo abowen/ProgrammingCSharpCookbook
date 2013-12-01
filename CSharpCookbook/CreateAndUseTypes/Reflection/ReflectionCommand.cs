@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.Reflection.Attributes;
 
 namespace CSharpCookbook.CreateAndUseTypes.Reflection
 {
@@ -11,7 +12,7 @@ namespace CSharpCookbook.CreateAndUseTypes.Reflection
 
         public ReflectionCommand()
         {
-        
+            AddCommand(new ReadCommand());
         }
     }
 }
