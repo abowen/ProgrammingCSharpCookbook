@@ -67,6 +67,11 @@
     <Compile Include="CreateAndUseTypes\Encapsulation\EncapsulationCommand.cs" />
     <Compile Include="CreateAndUseTypes\Encapsulation\Interfaces\ExplicitCommand.cs" />
     <Compile Include="CreateAndUseTypes\Encapsulation\Properties\PropertiesCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\ManipulateStringsCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringFormatting\EscapeCharactersCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringFormatting\DateFormatCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringFormatting\NumberFormatCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringFormatting\StringFormatCommand.cs" />
     <Compile Include="CreateAndUseTypes\Reflection\Attributes\ReadCommand.cs" />
     <Compile Include="CreateAndUseTypes\Reflection\ReflectionCommand.cs" />
     <Compile Include="ExternalResource.cs" />
