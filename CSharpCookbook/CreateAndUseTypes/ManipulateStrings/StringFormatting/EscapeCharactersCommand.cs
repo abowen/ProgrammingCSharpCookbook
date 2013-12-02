@@ -19,7 +19,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringFormatting
         {
             Console.WriteLine("Single Quote    : |\'|");
             Console.WriteLine("Double Quote    : |\"|");
-            Console.WriteLine("BackSlash       : |\\|");
+            Console.WriteLine("BackSlash       : |\\|");            
             Console.WriteLine("Null            : |\0|");
             Console.WriteLine("Backspace       : |\b|");
             Console.WriteLine("Form Feed       : |\f|");
