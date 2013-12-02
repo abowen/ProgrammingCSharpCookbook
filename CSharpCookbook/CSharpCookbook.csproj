@@ -74,8 +74,13 @@
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringFormatting\StringFormatCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Attributes\ReadCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Attributes\CreateCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Instantiate\ConstructorInfoCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Instantiate\CreateDelegateCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Instantiate\NonPublicCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Instantiate\CreateInstanceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\ReflectionCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\ArrayCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\InterfaceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\NestedCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\TypeCommand.cs" />
     <Compile Include="ExternalResource.cs" />
