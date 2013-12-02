@@ -4,7 +4,7 @@ using CSharpCookbook.CreateAndUseTypes.ConsumeTypes;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes;
 using CSharpCookbook.CreateAndUseTypes.Encapsulation;
 using CSharpCookbook.CreateAndUseTypes.ManipulateStrings;
-using CSharpCookbook.CreateAndUseTypes.Reflection;
+using CSharpCookbook.CreateAndUseTypes.ReflectionAndMetadata;
 
 namespace CSharpCookbook.CreateAndUseTypes
 {

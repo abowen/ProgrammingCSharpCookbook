@@ -1,25 +1,25 @@
 ﻿using System;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.CreateAndUseTypes.Reflection.Attributes
+namespace CSharpCookbook.CreateAndUseTypes.ReflectionAndMetadata.Attributes
 {
-    public class ReadCommand : DemoCommand
+    public class CreateCommand : DemoCommand
     {
-        public ReadCommand()
+        public CreateCommand()
         {
-            AddResource("Accessing Attributes using Reflection", "http://msdn.microsoft.com/en-us/library/z919e8tw%28v=vs.120%29.aspx");
+            AddResource("Creating Custom Attributes", "http://msdn.microsoft.com/en-us/library/sw480ze8.aspx");
         }
 
         public override string Description
         {
-            get { return "Read"; }
+            get { return "Create Attributes"; }
         }
 
         public override void ExecuteDemo()
         {
             var myInstance = new MyAttributeClass();
             var type = myInstance.GetType();
-            var attributes = Attribute.GetCustomAttributes(type); 
+            var attributes = Attribute.GetCustomAttributes(type);
 
             foreach (var attribute in attributes)
             {
@@ -33,7 +33,7 @@ namespace CSharpCookbook.CreateAndUseTypes.Reflection.Attributes
         }
     }
 
-    [MyAttribute("AttributeValue", Number = 1)]
+    [My("AttributeValue", Number = 1)]
     public class MyAttributeClass
     {
     }
