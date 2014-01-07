@@ -15,6 +15,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
 
         public CreateTypesCommand()
         {
+            AddCommand(new AnonymousCommand());
             AddCommand(new ClassCommand());
             AddCommand(new StructCommand());
             AddCommand(new GenericClassCommand());

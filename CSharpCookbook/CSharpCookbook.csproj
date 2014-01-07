@@ -63,6 +63,7 @@
     <Compile Include="CreateAndUseTypes\CreateTypes\Methods\OptionalCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\ClassCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Generics\GenericClassCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Types\AnonymousCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\StructCommand.cs" />
     <Compile Include="CreateAndUseTypes\Encapsulation\EncapsulationCommand.cs" />
     <Compile Include="CreateAndUseTypes\Encapsulation\Interfaces\ExplicitCommand.cs" />
