@@ -33,7 +33,12 @@ namespace CSharpCookbook.CreateAndUseTypes.ReflectionAndMetadata.Attributes
         }
     }
 
-    [My("AttributeValue", Number = 1)]
+    [My("AttributeValue", Number = 1)]    
+    public class MyClass
+    {
+    }
+
+    [MyAttribute("AttributeValue")]
     public class MyAttributeClass
     {
     }

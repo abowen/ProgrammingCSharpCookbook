@@ -23,6 +23,11 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Casting
 
             DynamicMethod(instance);
             Console.WriteLine("Value Returned: {0}", DynamicReturnMethod(1,2));
+
+            Console.WriteLine("Static Types in Dynamic Expressions");
+            object o = "Object";
+            dynamic d = "Dynamic";
+            MyDynamicClass.Foo(o,d);
         }
 
         public void DynamicMethod(dynamic dynamicObject)
@@ -42,6 +47,11 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Casting
         {
             Console.WriteLine("Dynamic Method");
         }
+
+        public static void Foo(object x, object y) { Console.WriteLine("oo"); }
+        public static void Foo(object x, string y) { Console.WriteLine("os"); }
+        public static void Foo(string x, object y) { Console.WriteLine("so"); }
+        public static void Foo(string x, string y) { Console.WriteLine("ss"); }
     }
 }
 

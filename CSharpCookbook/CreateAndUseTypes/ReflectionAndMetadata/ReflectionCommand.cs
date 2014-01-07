@@ -16,6 +16,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ReflectionAndMetadata
         {
             AddCommand(new CreateCommand());
             AddCommand(new ReadCommand());
+            AddCommand(new CallerInfoCommand());
             AddCommand(new TypeCommand());
             AddCommand(new ArrayCommand());
             AddCommand(new NestedCommand());
