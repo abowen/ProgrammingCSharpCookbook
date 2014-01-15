@@ -49,6 +49,7 @@
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Boxing\BoxingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConvertCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\CastCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringEncoding\EncodingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringMatching\RegularExpressionCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Attributes\CallerInfoCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\DynamicCommand.cs" />
