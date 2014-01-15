@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringEncoding
+namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringHandling
 {
     public class EncodingCommand : DemoCommand
     {

@@ -1,6 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
-using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringEncoding;
 using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringFormatting;
+using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringHandling;
 using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringMatching;
 
 namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
@@ -20,6 +20,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
             AddCommand(new EscapeCharactersCommand());
             AddCommand(new RegularExpressionCommand());
             AddCommand(new EncodingCommand());
+            AddCommand(new CultureCommand());
         }
     }
 }
