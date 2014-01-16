@@ -40,6 +40,11 @@
   <ItemGroup>
     <Compile Include="BaseCommands\DemoCommand.cs" />
     <Compile Include="BaseCommands\DisplayCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateDates\ManipulateDatesCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\TimeZoneInfoCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\DateTimeOffsetCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\DateTimeCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\TimeSpanCommand.cs" />
     <Compile Include="CreateAndUseTypes\ClassHierarchy\ClassHierarchyCommand.cs" />
     <Compile Include="CreateAndUseTypes\ClassHierarchy\Inherit\AbstractCommand.cs" />
     <Compile Include="CreateAndUseTypes\ClassHierarchy\Inherit\ClassCommand.cs" />
