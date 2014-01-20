@@ -54,6 +54,8 @@
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Boxing\BoxingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConvertCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\CastCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\ComparisonCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\SortingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\CultureCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\EncodingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringMatching\RegularExpressionCommand.cs" />

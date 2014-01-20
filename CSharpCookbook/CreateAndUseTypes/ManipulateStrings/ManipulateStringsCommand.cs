@@ -21,6 +21,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
             AddCommand(new RegularExpressionCommand());
             AddCommand(new EncodingCommand());
             AddCommand(new CultureCommand());
+            AddCommand(new SortingCommand());
         }
     }
 }
