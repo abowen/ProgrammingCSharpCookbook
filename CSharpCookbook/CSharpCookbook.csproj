@@ -98,6 +98,11 @@
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\InterfaceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\NestedCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\TypeCommand.cs" />
+    <Compile Include="DebuggingAndSecurity\DebuggingAndSecurityCommand.cs" />
+    <Compile Include="DebuggingAndSecurity\Security\Cryptography\WindowsDataProtectionCommand.cs" />
+    <Compile Include="DebuggingAndSecurity\Security\SecurityCommand.cs" />
+    <Compile Include="DebuggingAndSecurity\Validation\JSON\JsonCommand.cs" />
+    <Compile Include="DebuggingAndSecurity\Validation\ValidationCommand.cs" />
     <Compile Include="ExternalResource.cs" />
     <Compile Include="KeyboardListener.cs" />
     <Compile Include="CSharpCommand.cs" />
