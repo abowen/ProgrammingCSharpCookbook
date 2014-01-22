@@ -36,6 +36,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseCommands\DemoCommand.cs" />
@@ -54,6 +55,8 @@
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Boxing\BoxingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConvertCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\CastCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\Streams\StringReaderWriterCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ManipulateStrings\Streams\StreamReaderWriterCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\ComparisonCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\SortingCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateStrings\StringHandling\CultureCommand.cs" />
