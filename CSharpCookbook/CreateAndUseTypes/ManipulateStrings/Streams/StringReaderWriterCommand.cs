@@ -31,7 +31,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Streams
                 writer.WriteLine(@"</html>");
                 File.WriteAllText(fileName, writer.ToString());
             }
-            using (var reader = new StreamReader(fileName))
+            using (TextReader reader = new StreamReader(fileName))
             {
                 var xmlReader = XmlReader.Create(reader);
                 xmlReader.Read();

@@ -36,6 +36,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +100,7 @@
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\NestedCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\TypeCommand.cs" />
     <Compile Include="DebuggingAndSecurity\DebuggingAndSecurityCommand.cs" />
+    <Compile Include="DebuggingAndSecurity\Security\Cryptography\HashingCommand.cs" />
     <Compile Include="DebuggingAndSecurity\Security\Cryptography\WindowsDataProtectionCommand.cs" />
     <Compile Include="DebuggingAndSecurity\Security\SecurityCommand.cs" />
     <Compile Include="DebuggingAndSecurity\Validation\JSON\JsonCommand.cs" />
