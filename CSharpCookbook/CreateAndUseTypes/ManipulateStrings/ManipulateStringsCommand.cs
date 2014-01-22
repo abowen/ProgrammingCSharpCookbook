@@ -1,8 +1,9 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Formatting;
+using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Matching;
+using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Parsing;
 using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Streams;
-using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringFormatting;
 using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringHandling;
-using CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringMatching;
 
 namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
 {
@@ -25,6 +26,8 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
             AddCommand(new SortingCommand());
             AddCommand(new StreamReaderWriterCommand());
             AddCommand(new StringReaderWriterCommand());
+            AddCommand(new ParseCommand());
+            AddCommand(new ParsePerformanceCommand());
         }
     }
 }

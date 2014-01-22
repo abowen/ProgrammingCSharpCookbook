@@ -1,7 +1,7 @@
 ﻿using System;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringFormatting
+namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Formatting
 {
     public class DateFormatCommand : DemoCommand
     {

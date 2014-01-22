@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringMatching
+namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Matching
 {
     public class RegularExpressionCommand : DemoCommand
     {

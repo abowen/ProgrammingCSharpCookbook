@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
+using System.Reflection;
+using System.Threading;
 
 namespace CSharpCookbook.BaseCommands
 {
@@ -15,6 +19,26 @@ namespace CSharpCookbook.BaseCommands
         public void AddResource(string title, string location)
         {
             _resources.Add(new ExternalResource(title, location));
+        }
+
+        public void RepeatMethod(Action method, int amount = 100)
+        {
+            var stopWatch = Stopwatch.StartNew();
+            for (var i = 0; i < amount; i++)
+            {
+                method.Invoke();
+            }
+            stopWatch.Stop();
+            Console.WriteLine("{0} : {1}ms", method.GetMethodInfo().Name, stopWatch.ElapsedMilliseconds);
+        }
+
+        public void CultureMethod(Func<object> method, CultureInfo culture)
+        {
+            var currentCulture = Thread.CurrentThread.CurrentCulture;
+            Thread.CurrentThread.CurrentCulture = culture;
+            var result = method.Invoke();
+            Console.WriteLine("{0} {1} - {2}", method.GetMethodInfo().Name, result, culture);
+            Thread.CurrentThread.CurrentCulture = currentCulture;
         }
 
         public void ExecuteCommand()
