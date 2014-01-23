@@ -17,8 +17,9 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
         public ManipulateStringsCommand()
         {
             AddCommand(new StringFormatCommand());
-            AddCommand(new NumberFormatCommand());
+            AddCommand(new NumberFormatCommand());            
             AddCommand(new DateFormatCommand());
+            AddCommand(new EnumFormatCommand());
             AddCommand(new EscapeCharactersCommand());
             AddCommand(new RegularExpressionCommand());
             AddCommand(new EncodingCommand());
@@ -28,6 +29,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings
             AddCommand(new StringReaderWriterCommand());
             AddCommand(new ParseCommand());
             AddCommand(new ParsePerformanceCommand());
+            AddCommand(new NumberStylesCommand());
         }
     }
 }

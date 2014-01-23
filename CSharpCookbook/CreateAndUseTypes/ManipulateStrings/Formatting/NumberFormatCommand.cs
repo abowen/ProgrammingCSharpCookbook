@@ -9,6 +9,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Formatting
         {
             AddResource("Standard Numeric Formatting Strings", "http://msdn.microsoft.com/en-us/library/dwhawy9k%28v=vs.110%29.aspx");
             AddResource("Custom Numeric Formatting Strings", "http://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx");
+            AddResource("Numeric Format Strings", "C# In A Nutshell, Location 10290");
         }
 
         public override string Description

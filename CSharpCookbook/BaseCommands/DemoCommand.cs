@@ -30,15 +30,17 @@ namespace CSharpCookbook.BaseCommands
             }
             stopWatch.Stop();
             Console.WriteLine("{0} : {1}ms", method.GetMethodInfo().Name, stopWatch.ElapsedMilliseconds);
+            Console.WriteLine();
         }
 
-        public void CultureMethod(Func<object> method, CultureInfo culture)
+        public void CultureMethod(Action method, CultureInfo culture)
         {
+            Console.WriteLine("{0} {1}", method.GetMethodInfo(), culture);
             var currentCulture = Thread.CurrentThread.CurrentCulture;
             Thread.CurrentThread.CurrentCulture = culture;
-            var result = method.Invoke();
-            Console.WriteLine("{0} {1} - {2}", method.GetMethodInfo().Name, result, culture);
+            method.Invoke();            
             Thread.CurrentThread.CurrentCulture = currentCulture;
+            Console.WriteLine();
         }
 
         public void ExecuteCommand()
