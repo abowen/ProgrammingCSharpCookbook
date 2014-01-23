@@ -21,7 +21,7 @@ namespace CSharpCookbook.BaseCommands
             _resources.Add(new ExternalResource(title, location));
         }
 
-        public void RepeatMethod(Action method, int amount = 100)
+        public void PerformanceTest(Action method, int amount = 100)
         {
             var stopWatch = Stopwatch.StartNew();
             for (var i = 0; i < amount; i++)
@@ -29,11 +29,11 @@ namespace CSharpCookbook.BaseCommands
                 method.Invoke();
             }
             stopWatch.Stop();
-            Console.WriteLine("{0} : {1}ms", method.GetMethodInfo().Name, stopWatch.ElapsedMilliseconds);
+            Console.WriteLine("{0} Performance : {1}ms", method.GetMethodInfo().Name, stopWatch.ElapsedMilliseconds);
             Console.WriteLine();
         }
 
-        public void CultureMethod(Action method, CultureInfo culture)
+        public void CultureTest(Action method, CultureInfo culture)
         {
             Console.WriteLine("{0} {1}", method.GetMethodInfo(), culture);
             var currentCulture = Thread.CurrentThread.CurrentCulture;

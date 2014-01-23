@@ -21,8 +21,8 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Parsing
         {
             var germanyCulture = new CultureInfo("de");
 
-            CultureMethod(ParseInput, Thread.CurrentThread.CurrentCulture);            
-            CultureMethod(ParseInput, germanyCulture);
+            CultureTest(ParseInput, Thread.CurrentThread.CurrentCulture);            
+            CultureTest(ParseInput, germanyCulture);
         }
 
         public void ParseInput()

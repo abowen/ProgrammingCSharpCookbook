@@ -17,6 +17,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes
             AddCommand(new ConvertCommand());
             AddCommand(new CastCommand());
             AddCommand(new DynamicCommand());
+            AddCommand(new ConversionPerformanceCommand());
         }
     }
 }

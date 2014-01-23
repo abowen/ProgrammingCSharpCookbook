@@ -23,9 +23,9 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.StringHandling
             var americanCulture = new CultureInfo("en-US");
             var danishCulture = new CultureInfo("da-DK");
 
-            CultureMethod(SortStrings, Thread.CurrentThread.CurrentCulture);
-            CultureMethod(SortStrings, americanCulture);
-            CultureMethod(SortStrings, danishCulture);
+            CultureTest(SortStrings, Thread.CurrentThread.CurrentCulture);
+            CultureTest(SortStrings, americanCulture);
+            CultureTest(SortStrings, danishCulture);
         }
 
         private void SortStrings()

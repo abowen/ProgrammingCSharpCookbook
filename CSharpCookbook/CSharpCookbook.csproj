@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BaseCommands\DemoCommand.cs" />
     <Compile Include="BaseCommands\DisplayCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConversionPerformanceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\ManipulateDatesCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\TimeZoneInfoCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\DateTimeOffsetCommand.cs" />

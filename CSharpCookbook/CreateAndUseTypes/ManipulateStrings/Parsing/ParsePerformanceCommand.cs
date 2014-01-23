@@ -17,8 +17,8 @@ namespace CSharpCookbook.CreateAndUseTypes.ManipulateStrings.Parsing
 
         public override void ExecuteDemo()
         {
-            RepeatMethod(ParseException);
-            RepeatMethod(TryParse);
+            PerformanceTest(ParseException);
+            PerformanceTest(TryParse);
         }
 
         private static void ParseException()
