@@ -28,6 +28,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new NewCommand());
             AddCommand(new OverloadCommand());
             AddCommand(new IndexerCommand());
+            AddCommand(new EnumCommand());
         }
     }
 }
