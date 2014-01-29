@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.CreateAndUseTypes.CreateTypes.Collections;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Methods;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Properties;
@@ -29,6 +30,8 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new OverloadCommand());
             AddCommand(new IndexerCommand());
             AddCommand(new EnumCommand());
+            AddCommand(new CustomCollectionCommand());
+            AddCommand(new CollectionPerformanceCommand());
         }
     }
 }

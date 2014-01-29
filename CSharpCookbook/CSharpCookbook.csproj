@@ -44,6 +44,8 @@
     <Compile Include="BaseCommands\DisplayCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConversionPerformanceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Comparing\EqualsCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CollectionPerformanceCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CustomCollectionCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\EnumCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\ManipulateDatesCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\TimeZoneInfoCommand.cs" />
