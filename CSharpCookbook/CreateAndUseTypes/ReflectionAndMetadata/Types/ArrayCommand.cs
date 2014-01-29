@@ -17,6 +17,11 @@ namespace CSharpCookbook.CreateAndUseTypes.ReflectionAndMetadata.Types
 
         public override void ExecuteDemo()
         {
+            ReflectionDemo();            
+        }
+
+        private static void ReflectionDemo()
+        {
             var stringType = typeof (string);
             Console.WriteLine("typeof(string)     : {0}", stringType.Name);
             var arrayStringType = stringType.MakeArrayType();

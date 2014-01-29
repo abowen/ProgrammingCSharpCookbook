@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Text;
 using CSharpCookbook.BaseCommands;
 
@@ -20,6 +21,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Boxing
         {
             StringBuilderExample();
             DoubleNaNExample();
+            StructExample();
         }
 
         private static void StringBuilderExample()
@@ -38,6 +40,18 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Boxing
             Console.WriteLine("==      : {0}", x == double.NaN);
             Console.WriteLine(".Equals : {0}", x.Equals(double.NaN));
             Console.WriteLine(".IsNaN  : {0}", double.IsNaN(x));
+        }
+
+        private static void StructExample()
+        {
+            Console.WriteLine("Array");
+            object[] a1 = { "string", 123, true };
+            object[] a2 = { "string", 123, true };            
+            Console.WriteLine("==      : {0}", a1 == a2);
+            Console.WriteLine(".Equals : {0}", a1.Equals(a2));
+            IStructuralEquatable se1 = a1;
+            var result = se1.Equals(a2, StructuralComparisons.StructuralEqualityComparer);
+            Console.WriteLine("ISE     : {0}", result);
         }
     }    
 }
