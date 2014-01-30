@@ -17,6 +17,7 @@ namespace CSharpCookbook.ImplementDataAccess.Linq
             AddCommand(new ProjectionCommand());
             AddCommand(new ChainingCommand());
             AddCommand(new DeferredExecutionCommand());
+            AddCommand(new IntoCommand());
         }
     }
 }

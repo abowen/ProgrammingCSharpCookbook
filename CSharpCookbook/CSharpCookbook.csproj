@@ -116,6 +116,7 @@
     <Compile Include="DebuggingAndSecurity\Validation\ValidationCommand.cs" />
     <Compile Include="ExternalResource.cs" />
     <Compile Include="ImplementDataAccess\ImplementDataAccessCommand.cs" />
+    <Compile Include="ImplementDataAccess\Linq\General\IntoCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\LinqCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\General\ChainingCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\General\DeferredExecutionCommand.cs" />
