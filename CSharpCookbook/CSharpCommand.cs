@@ -1,6 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.CreateAndUseTypes;
 using CSharpCookbook.DebuggingAndSecurity;
+using CSharpCookbook.ImplementDataAccess;
 using CSharpCookbook.ManageProgramFlow;
 
 namespace CSharpCookbook
@@ -14,6 +15,7 @@ namespace CSharpCookbook
             AddCommand(new ManageProgramFlowCommand());
             AddCommand(new CreateAndUseTypesCommand());
             AddCommand(new DebuggingAndSecurityCommand());
+            AddCommand(new ImplementDataAccessCommand());
         }
     }
 }
