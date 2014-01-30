@@ -1,4 +1,5 @@
 ﻿using CSharpCookbook.BaseCommands;
+using CSharpCookbook.ImplementDataAccess.Linq.General;
 using CSharpCookbook.ImplementDataAccess.Linq.Operators;
 
 namespace CSharpCookbook.ImplementDataAccess.Linq
@@ -13,7 +14,9 @@ namespace CSharpCookbook.ImplementDataAccess.Linq
         public LinqCommand()
         {
             AddCommand(new WhereCommand());
-            AddCommand(new ProjectionCommand());            
+            AddCommand(new ProjectionCommand());
+            AddCommand(new ChainingCommand());
+            AddCommand(new DeferredExecutionCommand());
         }
     }
 }

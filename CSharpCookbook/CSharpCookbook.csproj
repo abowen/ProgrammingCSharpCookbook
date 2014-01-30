@@ -117,6 +117,8 @@
     <Compile Include="ExternalResource.cs" />
     <Compile Include="ImplementDataAccess\ImplementDataAccessCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\LinqCommand.cs" />
+    <Compile Include="ImplementDataAccess\Linq\General\ChainingCommand.cs" />
+    <Compile Include="ImplementDataAccess\Linq\General\DeferredExecutionCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\Operators\WhereCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\Operators\ProjectionCommand.cs" />
     <Compile Include="KeyboardListener.cs" />
