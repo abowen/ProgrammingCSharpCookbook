@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Xml;
 using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ImplementDataAccess.Linq.General
