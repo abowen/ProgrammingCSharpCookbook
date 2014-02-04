@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{026DCAB1-A0FB-4438-BF72-8730C8665501}</ProjectGuid>
+    <ProjectGuid>{B4689E2C-E969-46D0-9515-6E3F4217C2F6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpCookbook.Data</RootNamespace>
-    <AssemblyName>CSharpCookbook.Data</AssemblyName>
+    <RootNamespace>CSharpCookbook.SqlFu</RootNamespace>
+    <AssemblyName>CSharpCookbook.SqlFu</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CavemanTools">
+      <HintPath>..\CSharpCookbook\packages\CavemanTools.3.3.0\lib\Net45\CavemanTools.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlFu">
+      <HintPath>..\CSharpCookbook\packages\SqlFu.2.2.1\lib\Net45\SqlFu.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="MySqlFu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpCookbook\CSharpCookbook.SqlCompact\CSharpCookbook.SqlCompact.csproj">
+      <Project>{33d8141f-e05c-4c1d-b76c-26c331549143}</Project>
+      <Name>CSharpCookbook.SqlCompact</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

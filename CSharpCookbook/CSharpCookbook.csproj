@@ -124,6 +124,10 @@
     <Compile Include="ImplementDataAccess\Linq\Operators\WhereCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\Operators\ProjectionCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\Queryable\LinqToSqlCommand.cs" />
+    <Compile Include="ImplementDataAccess\Mapping\MappingCommand.cs" />
+    <Compile Include="ImplementDataAccess\Mapping\SqlFu\InsertCommand.cs" />
+    <Compile Include="ImplementDataAccess\Mapping\SqlFu\QueryCommand.cs" />
+    <Compile Include="ImplementDataAccess\Mapping\SqlFu\TestCommand.cs" />
     <Compile Include="KeyboardListener.cs" />
     <Compile Include="CSharpCommand.cs" />
     <Compile Include="ManageProgramFlow\Asynchronous\AsyncAwait\AsyncAwaitCommand.cs" />
@@ -182,7 +186,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpCookbook.SqlFu\CSharpCookbook.SqlFu.csproj">
+      <Project>{b4689e2c-e969-46d0-9515-6e3f4217c2f6}</Project>
+      <Name>CSharpCookbook.SqlFu</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

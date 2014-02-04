@@ -1,5 +1,6 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.ImplementDataAccess.Linq;
+using CSharpCookbook.ImplementDataAccess.Mapping;
 
 namespace CSharpCookbook.ImplementDataAccess
 {
@@ -10,6 +11,7 @@ namespace CSharpCookbook.ImplementDataAccess
         public ImplementDataAccessCommand()
         {
             AddCommand(new LinqCommand());
+            AddCommand(new MappingCommand());
         }
     }
 }

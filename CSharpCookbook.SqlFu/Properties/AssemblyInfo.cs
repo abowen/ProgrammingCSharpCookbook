@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CSharpCookbook.Data")]
+[assembly: AssemblyTitle("CSharpCookbook.SqlFu")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CSharpCookbook.Data")]
+[assembly: AssemblyProduct("CSharpCookbook.SqlFu")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("83c49342-5cb4-4729-9695-3ef82cd7e0a7")]
+[assembly: Guid("af345c4d-3c76-4508-8f54-88cd2590351c")]
 
 // Version information for an assembly consists of the following four values:
 //
