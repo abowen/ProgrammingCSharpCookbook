@@ -22,6 +22,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
             AddCommand(new BitwiseCommand());
             AddCommand(new GlobalCommand());            
             AddCommand(new BasicExpressionCommand());
+            AddCommand(new AdvancedExpressionCommand());
             AddCommand(new QueryExpressionCommand());
             AddCommand(new LambdaExpressionCommand());
             AddCommand(new ExpressionTreeCommand());

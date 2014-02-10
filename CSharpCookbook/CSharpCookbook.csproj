@@ -44,6 +44,7 @@
     <Compile Include="BaseCommands\DisplayCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\ConversionPerformanceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Comparing\EqualsCommand.cs" />
+    <Compile Include="CreateAndUseTypes\ConsumeTypes\Indexes\IndexOfCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CollectionPerformanceCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CustomCollectionCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\EnumCommand.cs" />
@@ -167,6 +168,7 @@
     <Compile Include="ManageProgramFlow\EventsAndCallBacks\Delegates\DelegateCommand.cs" />
     <Compile Include="ManageProgramFlow\EventsAndCallBacks\Events\EventHandlerGenericCommand.cs" />
     <Compile Include="ManageProgramFlow\EventsAndCallBacks\Events\EventHandlerCommand.cs" />
+    <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\AdvancedExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\BasicExpressionCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\ExpressionTreeCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\Expressions\LambdaExpressionCommand.cs" />

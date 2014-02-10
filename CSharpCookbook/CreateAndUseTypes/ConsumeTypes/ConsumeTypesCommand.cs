@@ -1,6 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Boxing;
 using CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Casting;
+using CSharpCookbook.CreateAndUseTypes.ConsumeTypes.Indexes;
 
 namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes
 {
@@ -19,6 +20,7 @@ namespace CSharpCookbook.CreateAndUseTypes.ConsumeTypes
             AddCommand(new DynamicCommand());
             AddCommand(new ConversionPerformanceCommand());
             AddCommand(new EqualsCommand());
+            AddCommand(new IndexOfCommand());
         }
     }
 }
