@@ -3,9 +3,9 @@ using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors
 {
-    public class BaseCommand : DemoCommand
+    public class ConstructorBaseCommand : DemoCommand
     {
-        public BaseCommand()
+        public ConstructorBaseCommand()
         {
             AddResource("Using Constructors", "http://msdn.microsoft.com/en-us/library/ms173115.aspx");
         }
@@ -21,15 +21,15 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors
         }
     }
 
-    public class MyCustomConstructorClass
+    public class MyCustomBaseConstructorClass
     {
-        public MyCustomConstructorClass(string value)
+        public MyCustomBaseConstructorClass(string value)
         {
             Console.WriteLine("MyCustomConstructorClass {0}", value);
         }
     }
 
-    public class MyCustomInheritedConstructorClass : MyCustomConstructorClass
+    public class MyCustomInheritedConstructorClass : MyCustomBaseConstructorClass
     {
         public MyCustomInheritedConstructorClass(string value)
             : base(value + "test")

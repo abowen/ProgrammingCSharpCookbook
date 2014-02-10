@@ -20,9 +20,10 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new ClassCommand());
             AddCommand(new StructCommand());
             AddCommand(new GenericClassCommand());
-            AddCommand(new BaseCommand());
-            AddCommand(new StaticCommand());
-            AddCommand(new PrivateCommand());
+            AddCommand(new ConstructorOrderCommand());
+            AddCommand(new ConstructorBaseCommand());
+            AddCommand(new ConstructorStaticCommand());
+            AddCommand(new ConstructorPrivateCommand());
             AddCommand(new OptionalCommand());
             AddCommand(new VirtualCommand());
             AddCommand(new ExtensionCommand());
@@ -30,6 +31,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new OverloadCommand());
             AddCommand(new IndexerCommand());
             AddCommand(new EnumCommand());
+            AddCommand(new ArrayCommand());
             AddCommand(new CustomCollectionCommand());
             AddCommand(new CollectionPerformanceCommand());
         }

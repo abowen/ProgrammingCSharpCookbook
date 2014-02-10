@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions
@@ -22,7 +23,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow.Expressions
             result *= 5 + 9 / 3;
             var expression = @"10 *= 5 + 9 / 3";
             Console.WriteLine("Expression : {0}", expression);
-            Console.WriteLine("Result     : {0}", result);
+            Console.WriteLine("Result     : {0}", result);            
         }
     }
 }

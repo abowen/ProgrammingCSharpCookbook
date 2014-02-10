@@ -3,9 +3,9 @@ using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors
 {
-    public class StaticCommand : DemoCommand
+    public class ConstructorStaticCommand : DemoCommand
     {
-        public StaticCommand()
+        public ConstructorStaticCommand()
         {
             AddResource("Static Constructors", "http://msdn.microsoft.com/en-us/library/k9x6w0hc.aspx");
         }

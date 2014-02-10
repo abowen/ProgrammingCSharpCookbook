@@ -3,9 +3,9 @@ using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors
 {
-    public class PrivateCommand : DemoCommand
+    public class ConstructorPrivateCommand : DemoCommand
     {
-        public PrivateCommand()
+        public ConstructorPrivateCommand()
         {
             AddResource("Private Constructors", "http://msdn.microsoft.com/en-us/library/kcfb85a6%28v=vs.120%29.aspx");
         }

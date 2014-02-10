@@ -46,7 +46,9 @@
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Comparing\EqualsCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Indexes\IndexOfCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CollectionPerformanceCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Collections\ArrayCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CustomCollectionCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\ConstructorOrderCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\EnumCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\ManipulateDatesCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\TimeSpans\TimeZoneInfoCommand.cs" />
@@ -76,9 +78,9 @@
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Attributes\CallerInfoCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\Casting\DynamicCommand.cs" />
     <Compile Include="CreateAndUseTypes\ConsumeTypes\ConsumeTypesCommand.cs" />
-    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\BaseCommand.cs" />
-    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\StaticCommand.cs" />
-    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\PrivateCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\ConstructorBaseCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\ConstructorStaticCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\ConstructorPrivateCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\CreateTypesCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateAndUseTypesCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Methods\OverloadCommand.cs" />
