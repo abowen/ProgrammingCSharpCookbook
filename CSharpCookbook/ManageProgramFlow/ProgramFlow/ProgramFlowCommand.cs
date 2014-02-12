@@ -17,6 +17,7 @@ namespace CSharpCookbook.ManageProgramFlow.ProgramFlow
         {
             AddCommand(new SwitchCommand());
             AddCommand(new GotoCaseCommand());
+            AddCommand(new GotoTryFinallyCommand());
             AddCommand(new NullCoalescingCommand());
             AddCommand(new ConditionalCommand());
             AddCommand(new BitwiseCommand());

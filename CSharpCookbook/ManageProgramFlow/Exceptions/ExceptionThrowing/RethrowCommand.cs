@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
 using CSharpCookbook.BaseCommands;
 
 namespace CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionThrowing
@@ -9,7 +7,7 @@ namespace CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionThrowing
     {
         public RethrowCommand()
         {
-            AddResource("Rethrow to preserve stack details", "http://msdn.microsoft.com/en-us/library/ms182363(v=vs.80).aspx");            
+            AddResource("Rethrow to preserve stack details", "http://msdn.microsoft.com/en-us/library/ms182363(v=vs.80).aspx");
         }
 
         public override string Description
@@ -19,49 +17,60 @@ namespace CSharpCookbook.ManageProgramFlow.Exceptions.ExceptionThrowing
 
         public override void ExecuteDemo()
         {
+            MethodA();
+        }        
+
+        private void OutputExceptionInfo(Exception ex)
+        {
+            Console.WriteLine("Exception Dump");
+            Console.WriteLine("Source: {0}", ex.Source);
+            Console.WriteLine("TargetSite {0}", ex.TargetSite);
+            Console.WriteLine("StackTrace {0}", ex.StackTrace);            
+        }
+
+        public void MethodA()
+        {
+            Console.WriteLine();
             try
             {
                 Console.WriteLine("Keep Stack");
-                EntryMethod(true);
+                MethodB(true);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception stack trace {0}", ex.StackTrace);
+                OutputExceptionInfo(ex);
             }
-
+            Console.WriteLine();
             try
             {
                 Console.WriteLine("Don't Keep Stack");
-                EntryMethod(false);
+                MethodB(false);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception stack trace {0}", ex.StackTrace);
-            }                        
+                OutputExceptionInfo(ex);
+            }
         }
 
-        public void EntryMethod(bool keepStack)
+        public void MethodB(bool keepStack)
         {
             try
             {
-                ExceptionMethod();
+                MethodC();
             }
             catch (Exception ex)
             {
                 if (keepStack)
-                {                    
+                {
                     throw;
                 }
-                else
-                {                    
-                    throw ex;
-                }
+                throw ex;
             }
         }
 
-        public void ExceptionMethod()
+        public void MethodC()
         {
-            throw new Exception("Original");
+            throw new Exception("Original Exception Message");
         }
-    }    
+    }
 }
