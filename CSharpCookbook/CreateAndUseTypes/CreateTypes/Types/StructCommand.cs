@@ -35,7 +35,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Types
     }
 
     public struct MyCustomStruct
-    {
+    {        
         public int Value;
     }
 }

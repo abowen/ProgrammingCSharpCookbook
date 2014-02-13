@@ -1,7 +1,7 @@
 ﻿using System;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Types
+namespace CSharpCookbook.CreateAndUseTypes.CreateTypes.Generics
 {
     public class GenericClassCommand : DemoCommand
     {

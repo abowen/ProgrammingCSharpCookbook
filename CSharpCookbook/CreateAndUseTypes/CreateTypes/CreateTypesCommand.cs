@@ -1,6 +1,7 @@
 ﻿using CSharpCookbook.BaseCommands;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Collections;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Constructors;
+using CSharpCookbook.CreateAndUseTypes.CreateTypes.Generics;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Methods;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Properties;
 using CSharpCookbook.CreateAndUseTypes.CreateTypes.Types;
@@ -21,6 +22,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new StructCommand());
             AddCommand(new NullableCommand());
             AddCommand(new GenericClassCommand());
+            AddCommand(new GenericMethodsCommand());
             AddCommand(new ConstructorOrderCommand());
             AddCommand(new ConstructorBaseCommand());
             AddCommand(new ConstructorStaticCommand());

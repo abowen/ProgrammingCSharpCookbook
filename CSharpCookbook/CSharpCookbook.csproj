@@ -49,6 +49,7 @@
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\ArrayCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CustomCollectionCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\ConstructorOrderCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Generics\GenericMethodCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\EnumCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\NullableCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\ManipulateDatesCommand.cs" />
@@ -112,6 +113,8 @@
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\InterfaceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\NestedCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\TypeCommand.cs" />
+    <Compile Include="ImplementDataAccess\LinqOperators\LinqOperatorsCommand.cs" />
+    <Compile Include="ImplementDataAccess\Linq\General\JoinPerformance.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoFinallyCommand.cs" />
     <Compile Include="Security\DebuggingAndSecurityCommand.cs" />
     <Compile Include="Security\Security\Cryptography\HashingCommand.cs" />
@@ -126,8 +129,8 @@
     <Compile Include="ImplementDataAccess\Linq\LinqCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\General\ChainingCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\General\DeferredExecutionCommand.cs" />
-    <Compile Include="ImplementDataAccess\Linq\Operators\WhereCommand.cs" />
-    <Compile Include="ImplementDataAccess\Linq\Operators\ProjectionCommand.cs" />
+    <Compile Include="ImplementDataAccess\LinqOperators\Filtering\WhereCommand.cs" />
+    <Compile Include="ImplementDataAccess\LinqOperators\Projecting\SelectCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\Queryable\LinqToSqlCommand.cs" />
     <Compile Include="ImplementDataAccess\Mapping\MappingCommand.cs" />
     <Compile Include="ImplementDataAccess\Mapping\SqlFu\InsertCommand.cs" />
@@ -197,6 +200,9 @@
       <Project>{b4689e2c-e969-46d0-9515-6e3f4217c2f6}</Project>
       <Name>CSharpCookbook.SqlFu</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ImplementDataAccess\LinqOperators\Joining\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

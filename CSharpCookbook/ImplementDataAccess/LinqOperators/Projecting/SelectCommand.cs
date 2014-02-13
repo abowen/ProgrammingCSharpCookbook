@@ -2,11 +2,11 @@
 using System.Linq;
 using CSharpCookbook.BaseCommands;
 
-namespace CSharpCookbook.ImplementDataAccess.Linq.Operators
+namespace CSharpCookbook.ImplementDataAccess.LinqOperators.Projecting
 {
-    public class ProjectionCommand : DemoCommand
+    public class SelectCommand : DemoCommand
     {
-        public ProjectionCommand()
+        public SelectCommand()
         {
             AddResource("LINQ", "C# In A NutShell, Location 14015");
         }
