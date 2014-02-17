@@ -113,7 +113,9 @@
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\InterfaceCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\NestedCommand.cs" />
     <Compile Include="CreateAndUseTypes\ReflectionAndMetadata\Types\TypeCommand.cs" />
+    <Compile Include="ImplementDataAccess\LinqOperators\Grouping\GroupByCommand.cs" />
     <Compile Include="ImplementDataAccess\LinqOperators\LinqOperatorsCommand.cs" />
+    <Compile Include="ImplementDataAccess\LinqOperators\Ordering\OrderByCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\General\JoinPerformance.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoFinallyCommand.cs" />
     <Compile Include="Security\DebuggingAndSecurityCommand.cs" />
