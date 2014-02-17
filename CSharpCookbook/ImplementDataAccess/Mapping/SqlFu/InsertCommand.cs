@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using CSharpCookbook.BaseCommands;
 using CSharpCookbook.SqlFu;
 

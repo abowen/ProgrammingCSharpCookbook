@@ -8,7 +8,7 @@ namespace CSharpCookbook.ImplementDataAccess.LinqOperators
     {
         public override string Description
         {
-            get { return "LINQ"; }
+            get { return "LINQ Operators"; }
         }
 
         public LinqOperatorsCommand()

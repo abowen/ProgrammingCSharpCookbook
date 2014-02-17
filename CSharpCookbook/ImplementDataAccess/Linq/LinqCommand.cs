@@ -18,6 +18,7 @@ namespace CSharpCookbook.ImplementDataAccess.Linq
             AddCommand(new IntoCommand());
             AddCommand(new LetCommand());
             AddCommand(new LinqToSqlCommand());
+            AddCommand(new JoinPerformanceCommand());
         }
     }
 }

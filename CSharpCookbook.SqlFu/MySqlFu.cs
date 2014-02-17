@@ -33,6 +33,15 @@ namespace CSharpCookbook.SqlFu
             }            
         }
 
+        public IEnumerable<Purchase> QueryPurchase()
+        {
+            using (var db = SqlFuDao.GetConnection())
+            {
+                var query = db.Query<Purchase>();
+                return query;
+            }
+        }
+
         public void InsertPerson(string firstName, string lastName)
         {
             using (var db = SqlFuDao.GetConnection())
