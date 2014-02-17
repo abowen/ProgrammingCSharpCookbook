@@ -117,6 +117,7 @@
     <Compile Include="ImplementDataAccess\LinqOperators\Joining\JoinCommand.cs" />
     <Compile Include="ImplementDataAccess\LinqOperators\LinqOperatorsCommand.cs" />
     <Compile Include="ImplementDataAccess\LinqOperators\Ordering\OrderByCommand.cs" />
+    <Compile Include="ImplementDataAccess\LinqOperators\Scalar\CountCommand.cs" />
     <Compile Include="ImplementDataAccess\Linq\General\JoinPerformanceCommand.cs" />
     <Compile Include="ManageProgramFlow\ProgramFlow\ConditionalLogic\GotoFinallyCommand.cs" />
     <Compile Include="Security\DebuggingAndSecurityCommand.cs" />

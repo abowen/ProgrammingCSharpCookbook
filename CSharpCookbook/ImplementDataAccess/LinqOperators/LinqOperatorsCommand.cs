@@ -4,6 +4,7 @@ using CSharpCookbook.ImplementDataAccess.LinqOperators.Grouping;
 using CSharpCookbook.ImplementDataAccess.LinqOperators.Joining;
 using CSharpCookbook.ImplementDataAccess.LinqOperators.Ordering;
 using CSharpCookbook.ImplementDataAccess.LinqOperators.Projecting;
+using CSharpCookbook.ImplementDataAccess.LinqOperators.Scalar;
 
 namespace CSharpCookbook.ImplementDataAccess.LinqOperators
 {
@@ -20,7 +21,8 @@ namespace CSharpCookbook.ImplementDataAccess.LinqOperators
             AddCommand(new GroupByCommand());
             AddCommand(new JoinCommand());
             AddCommand(new OrderByCommand());
-            AddCommand(new SelectCommand());            
+            AddCommand(new SelectCommand());
+            AddCommand(new CountCommand());
         }
     }
 }
