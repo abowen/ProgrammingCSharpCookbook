@@ -37,6 +37,7 @@ namespace CSharpCookbook.CreateAndUseTypes.CreateTypes
             AddCommand(new ArrayCommand());
             AddCommand(new CustomCollectionCommand());
             AddCommand(new CollectionPerformanceCommand());
+            AddCommand(new WeakReferenceCommand());
         }
     }
 }

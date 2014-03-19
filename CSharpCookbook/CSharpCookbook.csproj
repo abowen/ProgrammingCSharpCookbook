@@ -50,6 +50,7 @@
     <Compile Include="CreateAndUseTypes\CreateTypes\Collections\CustomCollectionCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Constructors\ConstructorOrderCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Generics\GenericMethodCommand.cs" />
+    <Compile Include="CreateAndUseTypes\CreateTypes\Types\WeakReferenceCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\EnumCommand.cs" />
     <Compile Include="CreateAndUseTypes\CreateTypes\Types\NullableCommand.cs" />
     <Compile Include="CreateAndUseTypes\ManipulateDates\ManipulateDatesCommand.cs" />
