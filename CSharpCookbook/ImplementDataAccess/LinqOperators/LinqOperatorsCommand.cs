@@ -23,6 +23,8 @@ namespace CSharpCookbook.ImplementDataAccess.LinqOperators
             AddCommand(new OrderByCommand());
             AddCommand(new SelectCommand());
             AddCommand(new CountCommand());
+            AddCommand(new AggregateCommand());
+            AddCommand(new AverageCommand());
         }
     }
 }
